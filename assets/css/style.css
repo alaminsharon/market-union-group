@@ -608,6 +608,17 @@ h6 {
 
 /****** Form Section End *********/
 /****** Quality Insurance Page *********/
+/****** Cost Section Start *********/
+.al-cost-section {
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-cost-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-cost-section {
+      padding: 40px 0; } }
+
+/****** Cost Section End *********/
 /****** Quality Section Start *********/
 .al-quality-section {
   padding: 80px 0; }
@@ -638,6 +649,43 @@ h6 {
 .al-quality-card-subtitle-margin {
   margin-top: 24px;
   margin-bottom: 16px; }
+
+.certifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px; }
+
+.box {
+  padding: 20px 30px;
+  border: 1px solid #dcdfe6;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 100px;
+  height: 70px; }
+
+.badge {
+  padding: 5px 15px;
+  border: 1px solid;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px; }
+
+.badge.blue {
+  color: #007bff;
+  border-color: #007bff; }
+
+.badge.green {
+  color: #28a745;
+  border-color: #28a745; }
 
 /****** Quality Section End *********/
 /******** theme file **********/
