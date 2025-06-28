@@ -1,0 +1,28 @@
+/*
+Theme Name:  - Business PSD Template
+Author: 
+Author URI: https://themeforest.net/user/SparkRaxx
+Tags: slass, business, corporate, consulting etc
+Description: Slass - Business PSD Template
+Version: 1.0.0
+*/
+
+/********* base file **********/
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/mixin';
+@import 'base/typhography';
+@import 'base/spacing';
+
+/******** components file ********/
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/footer';
+
+/******** pages file **********/
+@import 'pages/index-1';
+
+
+/******** theme file **********/
+@import 'theme/animation';
+@import 'theme/common';

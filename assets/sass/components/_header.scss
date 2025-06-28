@@ -1,0 +1,103 @@
+/******Header One Start*********/
+
+/******Header Bottom*******/
+.al-header-section {
+    background: #F9FAFB;
+    padding: 30px 0;
+}
+
+.al-header-logo {
+    display: inline-block;
+}
+
+.al-header-nav {
+    display: flex;
+    justify-content: flex-end;
+
+    li {
+        a {
+            font-size: 20px;
+            font-weight: 600;
+            font-family: var(--primary-font);
+            display: inline-block;
+            color: var(--primary-color);
+            padding: 10px 20px;
+            text-transform: capitalize;
+            transition: 0.3s;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+
+.mobile-toggle {
+
+    .header_toggle_btn {
+        background-color: var(--secondary-color);
+        padding: 15px;
+        border: 0;
+        border-radius: 10px;
+
+        span {
+            width: 25px;
+            height: 2px;
+            display: block;
+            background: var(--white-color);
+
+            +span {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+
+/************************ mobile menu start ****************/
+.mobile-menu {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -355px;
+    background-color: var(--white-color);
+    z-index: 99;
+    padding: 20px;
+    overflow-y: scroll;
+    transition: 0.3s;
+
+    .close {
+
+        i {
+            font-size: 18px;
+            padding: 6px 10px;
+            color: var(--white-color);
+            border: none;
+            border-radius: 10px;
+            background-color: var(--secondary-color);
+        }
+    }
+
+    .mobile-nav-menu {
+        margin-top: 32px;
+
+        li {
+            a {
+                display: inline-block;
+                color: var(--primary-color);
+                padding: 10px 0;
+                transition: 0.3s;
+
+                &:hover {
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+
+    &.active {
+        left: 0;
+    }
+}

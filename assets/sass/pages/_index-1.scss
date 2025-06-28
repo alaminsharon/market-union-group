@@ -1,0 +1,230 @@
+/****** Home Page *********/
+
+/****** Hero Section Stat *********/
+.al-hero-section {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 255px 0;
+
+    @include large-screen {
+        padding: 180px 0;
+    }
+
+    @include screen-992 {
+        padding: 120px 0;
+    }
+
+    @include screen-768 {
+        padding: 80px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-hero-title {
+    color: var(--white-color);
+    max-width: 864px;
+    margin: 0 auto;
+    line-height: 72px;
+
+    @include screen-992 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    @include screen-768 {
+        font-size: 53px;
+        line-height: 53px;
+    }
+
+    @include portrait-phone {
+        font-size: 31px;
+        line-height: 32px;
+    }
+}
+
+.al-hero-subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--white-color);
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    @include portrait-phone {
+        font-size: 20px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.al-hero-btn {
+    padding: 10px 29px;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    display: inline-block;
+
+    i {
+        margin-left: 16px;
+    }
+}
+
+/****** Hero Section End *********/
+
+/****** Service Section Stat *********/
+.al-service-section {
+    background: #F9FAFB;
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-service-title {
+    margin-bottom: 64px;
+    line-height: 40px;
+    @include portrait-phone {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+.al-service-card-thumb {
+    width: 64px;
+    height: 64px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-service-card-title {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    max-width: 160px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.al-service-card-subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    color: #4B5563;
+}
+
+/****** Service Section End *********/
+
+/****** Work Section Start *********/
+.al-work-section {
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-work-title {
+    margin-bottom: 64px;
+    line-height: 40px;
+    @include portrait-phone {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+.al-work-card-title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+.al-work-card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4B5563;
+}
+
+/****** Work Section End *********/
+
+/****** Solution Section Stat *********/
+.al-solution-section {
+    background-color: var(--secondary-color);
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-solution-title {
+    color: var(--white-color);
+    max-width: 711px;
+    margin: 0 auto;
+    line-height: 48px;
+
+    @include screen-768 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    @include portrait-phone {
+        font-size: 25px;
+        line-height: 25px;
+    }
+}
+
+.al-solution-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--white-color);
+    max-width: 798px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 48px;
+
+    @include portrait-phone {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+.al-solution-btn {
+    padding: 10px 29px;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    display: inline-block;
+
+    i {
+        margin-left: 16px;
+    }
+}
+
+/****** Solution Section End *********/
+
+/****** Form Section Start *********/
+
+/****** Form Section End *********/
