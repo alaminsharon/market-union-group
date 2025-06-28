@@ -26,6 +26,16 @@ img {
   margin: auto;
   padding: 0 12px; }
 
+.container-1370 {
+  max-width: 1394px;
+  margin: auto;
+  padding: 0 12px; }
+
+.container-1400 {
+  max-width: 1424px;
+  margin: auto;
+  padding: 0 12px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -175,12 +185,12 @@ h6 {
   -ms-flex-pack: end;
   justify-content: flex-end; }
   .al-header-nav li a {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     font-family: var(--primary-font);
     display: inline-block;
     color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 10px;
     text-transform: capitalize;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -246,7 +256,7 @@ h6 {
 /********* Footer *********/
 /******** pages file **********/
 /****** Home Page *********/
-/****** Hero Section Stat *********/
+/****** Hero Section Start *********/
 .al-hero-section {
   background-position: center center;
   background-repeat: no-repeat;
@@ -304,7 +314,83 @@ h6 {
     margin-left: 16px; }
 
 /****** Hero Section End *********/
-/****** Service Section Stat *********/
+/****** Support Section Start *********/
+.al-support-section {
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-support-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-support-section {
+      padding: 40px 0; } }
+
+.al-support-title {
+  max-width: 1152px;
+  margin: 0 auto;
+  line-height: 48px;
+  margin-bottom: 64px; }
+  @media (max-width: 991.98px) {
+    .al-support-title {
+      font-size: 32px;
+      line-height: 32px;
+      margin-bottom: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-support-title {
+      font-size: 25px;
+      line-height: 25px;
+      margin-bottom: 25px; } }
+
+.al-support-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 8px; }
+  @media (max-width: 1199.98px) {
+    .al-support-content {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      gap: 32px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media (max-width: 575.98px) {
+    .al-support-content {
+      gap: 15px; } }
+
+.al-support-card {
+  padding: 26px 30px 18px 30px;
+  border: 2px solid #E4E4E7;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  background-color: var(--white-color);
+  max-width: 204px;
+  min-height: 336px;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-support-card:hover {
+    border-color: #FBCFE8; }
+
+.al-support-card-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 16px; }
+
+.al-support-card-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: #4B5563; }
+
+/****** Support Section End *********/
+/****** Service Section Start *********/
 .al-service-section {
   background: #F9FAFB;
   padding: 80px 0; }
@@ -351,7 +437,9 @@ h6 {
 .al-service-card-subtitle {
   font-size: 14px;
   line-height: 24px;
-  color: #4B5563; }
+  color: #4B5563;
+  max-width: 155px;
+  margin: 0 auto; }
 
 /****** Service Section End *********/
 /****** Work Section Start *********/
@@ -369,8 +457,8 @@ h6 {
   line-height: 40px; }
   @media (max-width: 575.98px) {
     .al-work-title {
-      font-size: 24px;
-      line-height: 24px;
+      font-size: 21px;
+      line-height: 21px;
       margin-bottom: 30px; } }
 
 .al-work-card-title {
@@ -435,6 +523,121 @@ h6 {
     margin-left: 16px; }
 
 /****** Solution Section End *********/
-/****** Solution Section End *********/
-/****** Solution Section End *********/
+/****** Form Section Start *********/
+.al-form-section {
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-form-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-form-section {
+      padding: 40px 0; } }
+
+.al-form-title {
+  line-height: 48px;
+  max-width: 700px;
+  margin: 0 auto; }
+  .al-form-title span {
+    color: var(--secondary-color); }
+  @media (max-width: 767.98px) {
+    .al-form-title {
+      font-size: 35px;
+      line-height: 35px; } }
+  @media (max-width: 575.98px) {
+    .al-form-title {
+      font-size: 24px;
+      line-height: 24px; } }
+
+.al-form-subtitle {
+  max-width: 720px;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 40px; }
+  @media (max-width: 575.98px) {
+    .al-form-subtitle {
+      font-size: 14px; } }
+
+.al-form-input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background: #F9FAFB;
+  outline: 0;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px; }
+
+.form-select {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  background-color: #F9FAFB;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-position: right 1.5rem center; }
+  .form-select option {
+    border: none;
+    outline: none; }
+
+.form-select:focus {
+  border-color: #D1D1D1;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.al-form-btn {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  display: block;
+  border-radius: 4px; }
+
+/****** Form Section End *********/
+/****** Quality Insurance Page *********/
+/****** Quality Section Start *********/
+.al-quality-section {
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-quality-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-quality-section {
+      padding: 40px 0; } }
+
+.al-quality-title {
+  line-height: 48px; }
+
+.al-quality-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 64px;
+  color: #4B5563; }
+  @media (max-width: 575.98px) {
+    .al-quality-subtitle {
+      font-size: 16px; } }
+
+.al-quality-card-subtitle {
+  line-height: 24px;
+  color: #4B5563; }
+
+.al-quality-card-subtitle-margin {
+  margin-top: 24px;
+  margin-bottom: 16px; }
+
+/****** Quality Section End *********/
 /******** theme file **********/
