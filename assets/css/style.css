@@ -351,7 +351,9 @@ h6 {
 .al-service-card-subtitle {
   font-size: 14px;
   line-height: 24px;
-  color: #4B5563; }
+  color: #4B5563;
+  max-width: 155px;
+  margin: 0 auto; }
 
 /****** Service Section End *********/
 /****** Work Section Start *********/
