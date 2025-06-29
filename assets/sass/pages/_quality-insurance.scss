@@ -1,17 +1,23 @@
 /****** Quality Insurance Page *********/
 .al-hero-section-quality {
+}
+
+.al-hero-content-single {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 187px 0;
 
-    @include screen-992 {
-        padding: 120px 0;
+    @include large-screen {
+        padding: 120px 10px;
     }
 
     @include screen-768 {
-        padding: 80px 0;
+        padding: 80px 10px;
     }
 
     @include portrait-phone {
-        padding: 40px 0;
+        padding: 40px 10px;
     }
 }
 
@@ -43,16 +49,16 @@
 }
 
 /****** Cost Section Start *********/
-.al-cost-section {
+.al-cost-content {
     background: #F9FAFB;
     padding: 80px 0;
 
     @include screen-768 {
-        padding: 50px 0;
+        padding: 50px 10px;
     }
 
     @include portrait-phone {
-        padding: 40px 0;
+        padding: 40px 10px;
     }
 }
 
@@ -111,7 +117,7 @@
 .al-cost-card-subtitle {
     font-size: 16px;
     line-height: 26px;
-    color: #4B5563;
+    color: var(--paragraph-color);
     margin: 0 auto;
 
     @include large-screen {
@@ -153,7 +159,7 @@
     line-height: 28px;
     margin-top: 16px;
     margin-bottom: 64px;
-    color: #4B5563;
+    color: var(--paragraph-color);
 
     @include portrait-phone {
         font-size: 16px;
@@ -161,16 +167,25 @@
     }
 }
 
+.al-quality-row-margin {
+    margin-bottom: 64px;
+    @include screen-768 {
+        margin-bottom: 40px;
+    }
+    @include portrait-phone {
+        margin-bottom: 30px;
+    }
+}
+
 .al-quality-card-subtitle {
     line-height: 24px;
-    color: #4B5563;
+    color: var(--paragraph-color);
 }
 
 .al-quality-card-subtitle-margin {
     margin-top: 24px;
     margin-bottom: 16px;
 }
-
 
 .al-quality-card-thumb {
     img {

@@ -13,9 +13,6 @@
 .al-header-nav {
     display: flex;
     justify-content: flex-end;
-    @include large-screen {
-        flex-wrap: wrap;
-    }
 
     li {
         a {

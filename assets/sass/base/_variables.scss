@@ -9,11 +9,12 @@
     --primary-color: #000000;
     --secondary-color: #F23481;
     --white-color: #ffffff;
+    --paragraph-color: #4B5563;
 
     --border-color: #3D3D3D;
     --box-shadow: 0px 18px 24px 0px rgba(0, 0, 0, 0.16);
     
-    --project-bg: #f4f4f4;
+    --common-bg: #F9FAFB;
 }
 
 img {
@@ -34,6 +35,12 @@ img {
 
 .container-1400 {
     max-width: 1424px;
+    margin: auto;
+    padding: 0 12px;
+}
+
+.container-1905 {
+    max-width: 1929px;
     margin: auto;
     padding: 0 12px;
 }

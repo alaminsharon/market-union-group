@@ -1,0 +1,209 @@
+/****** Contact Us Page *********/
+
+/****** Breadcrumb Section Start *********/
+.al-breadcrumb-content {
+    background-color: var(--secondary-color);
+    padding: 92px 0;
+
+    @include screen-768 {
+        padding: 50px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-breadcrumb-title {
+    font-size: 60px;
+    line-height: 60px;
+    color: var(--white-color);
+
+    @include screen-768 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    @include portrait-phone {
+        font-size: 35px;
+        line-height: 35px;
+    }
+}
+
+/****** Breadcrumb Section End *********/
+
+.al-form-content {
+    background: var(--common-bg);
+    padding: 80px 202px;
+
+    @include screen-1400 {
+        padding: 50px;
+    }
+
+    @include large-screen {
+        padding: 40px;
+    }
+
+    @include portrait-phone {
+        padding: 20px 15px;
+    }
+}
+
+.al-form-card {
+    background-color: var(--white-color);
+    padding: 80px 102px 30px 102px;
+
+    @include screen-1400 {
+        padding: 50px 70px 30px 70px;
+    }
+
+    @include large-screen {
+        padding: 30px;
+    }
+
+    @include portrait-phone {
+        padding: 10px;
+    }
+}
+
+
+/****** Partner Section Start *********/
+.al-partner-section {
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
+}
+
+.al-partner-card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.al-partner-card-thumb {
+    width: 64px;
+    height: 64px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-partner-card-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 34px;
+
+    @include screen-992 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    @include screen-768 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @include portrait-phone {
+        font-size: 20px;
+    }
+}
+
+.al-partner-card-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary-color);
+    margin: 0 auto;
+
+    @include large-screen {
+        font-size: 13px;
+    }
+}
+
+/****** Partner Section End *********/
+
+/****** Location Section Start *********/
+.al-location-section {
+    padding: 0 0 120px 0;
+}
+
+.al-location-content {
+    background: var(--common-bg);
+    padding: 80px 0;
+}
+
+.al-location-title {
+    line-height: 40px;
+    margin-bottom: 64px;
+}
+
+
+.location-nav-tabs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    margin: auto;
+    padding: 10px;
+    background-color: var(--white-color);
+
+    button {
+        color: #4B5563;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 12px 58px;
+        border: none !important;
+        transition: 0.3s;
+
+        span {
+            margin-right: 10px;
+
+            svg {
+                path {
+                    stroke: #4B5563;
+                }
+            }
+        }
+
+        &:hover {
+            color: var(--secondary-color) !important;
+        }
+
+        &.active {
+            border-radius: 6px;
+            color: var(--white-color) !important;
+            background-color: var(--secondary-color) !important;
+
+            span {
+                svg {
+                    path {
+                        stroke: var(--white-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.al-location-tab-card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/****** Location Section End *********/
