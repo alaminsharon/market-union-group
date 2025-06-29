@@ -168,6 +168,9 @@
         padding: 12px 58px;
         border: none !important;
         transition: 0.3s;
+        @include portrait-phone {
+            font-size: 13px;
+        }
 
         span {
             margin-right: 10px;
@@ -203,7 +206,85 @@
     background: #FFFFFF;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 20px;
+    padding: 32px;
 }
 
+.al-location-tab-card-content-thumb {
+    width: 32px;
+    height: 32px;
+    background-color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-location-tab-card-content-title {
+    line-height: 32px;
+    color: var(--secondary-color);
+    @include portrait-phone {
+        font-size: 18px;
+    }
+}
+
+.al-location-tab-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--primary-color);
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.al-location-tab-card-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--paragraph-color);
+    strong {
+        font-weight: 700;
+    }
+}
+
+.al-location-tab-center-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--primary-color);
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.al-location-tab-center-strong {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--paragraph-color);
+    margin-top: 12px;
+}
+
+.al-location-tab-center-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--paragraph-color);
+}
+
+.al-location-tab-domestic-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--primary-color);
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.al-location-tab-domestic-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--paragraph-color);
+}
 /****** Location Section End *********/
