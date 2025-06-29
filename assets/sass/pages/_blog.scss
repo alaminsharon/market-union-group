@@ -1,0 +1,89 @@
+/****** Blog Page *********/
+
+/****** Hero Blog Section Start *********/
+.al-hero-content-blog {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 140px 0 80px 0;
+
+    @include large-screen {
+        padding: 180px 0;
+    }
+
+    @include screen-992 {
+        padding: 120px 10px;
+    }
+
+    @include screen-768 {
+        padding: 80px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
+}
+
+.al-hero-title-blog {
+    font-size: 60px;
+    max-width: 1260px;
+    color: var(--white-color);
+    text-align: center;
+    margin: 0 auto;
+    line-height: 60px;
+
+    @include screen-992 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    @include screen-768 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    @include portrait-phone {
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+.al-hero-subtitle-blog {
+    font-size: 24px;
+    line-height: 32px;
+    color: #E5E7EB;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.al-hero-hr-blog {
+    text-align: center;
+    width: 64px;
+    height: 4px;
+    display: inline-block;
+    border-radius: 9999px;
+    background-color: var(--secondary-color);
+    color: var(--secondary-color);
+    opacity: 1;
+    margin: 0;
+}
+/****** Hero Financial Section End *********/
+
+/****** Blog Section Start *********/
+.al-blog-section {
+    padding: 64px 0 148px 0;
+}
+.al-blog-card-thumb {
+    img {
+        border-radius: 8px 8px 0 0;
+    }
+}
+
+.al-blog-content {
+    padding: 24px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+}
+/****** Blog Section End *********/

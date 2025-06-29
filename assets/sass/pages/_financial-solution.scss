@@ -1,0 +1,340 @@
+/****** Finalcial Solution Page *********/
+
+/****** Hero Financial Section Start *********/
+.al-hero-content-financial {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 206px 0;
+
+    @include large-screen {
+        padding: 180px 0;
+    }
+
+    @include screen-992 {
+        padding: 120px 10px;
+    }
+
+    @include screen-768 {
+        padding: 80px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
+}
+
+.al-hero-title-financial {
+    font-size: 60px;
+    max-width: 1260px;
+    color: var(--white-color);
+    margin: 0 auto;
+    line-height: 60px;
+
+    @include screen-992 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    @include screen-768 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    @include portrait-phone {
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+.al-hero-financial-btn {
+    padding: 10px 29px;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    display: inline-block;
+    margin-top: 24px;
+}
+
+.al-solution-financial-title {
+    max-width: 1368px;
+    margin-bottom: 24px;
+}
+
+/****** Hero Financial Section End *********/
+
+/****** Strength Section Start *********/
+.al-strength-content {
+    background: var(--common-bg);
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
+}
+
+.al-strength-title {
+    line-height: 40px;
+    margin-bottom: 48px;
+    @include portrait-phone {
+        font-size: 21px;
+        line-height: 30px;
+    }
+}
+
+.al-strength-item {
+    margin-bottom: 24px;
+}
+
+.al-strength-item:last-child {
+    margin-bottom: 0;
+}
+
+.al-strength-item-thumb {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.al-strength-item-thumb-color {
+    background-color: #14B8A6;
+}
+
+.al-strength-item-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--paragraph-color);
+    @include screen-768 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    @include portrait-phone {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+.al-strength-thumb {
+    img {
+        @include screen-992 {
+            width: 100%;
+        }
+    }
+}
+/****** Strength Section End *********/
+
+/****** Advantage Section Start *********/
+.al-advantage-section {
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-advantage-title {
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @include portrait-phone {
+        font-size: 30px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+.al-advantage-card {
+    background: transparent;
+    border: 2px solid #F3F4F6;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 34px;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: #DBEAFE;
+    }
+
+    @include large-screen {
+        min-height: 280px;
+    }
+
+    @include screen-768 {
+        min-height: 250px;
+    }
+
+    @include portrait-phone {
+        min-height: 200px;
+        padding: 20px;
+    }
+}
+
+.al-advantage-card-thumb {
+    width: 64px;
+    height: 64px;
+    background-color: #3B82F6;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-advantage-card-thumb-color {
+    background-color: #6B7280;
+}
+
+.al-advantage-card-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 16px;
+
+    @include screen-992 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    @include portrait-phone {
+        font-size: 20px;
+    }
+}
+
+.al-advantage-card-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--paragraph-color);
+    margin: 0 auto;
+
+    @include large-screen {
+        font-size: 16px;
+    }
+}
+
+/****** Advantage Section End *********/
+
+/****** Custom Section Start *********/
+.al-custom-content {
+    background: #F9FAFB;
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
+}
+
+.al-custom-title {
+    line-height: 40px;
+    text-align: center;
+
+    @include portrait-phone {
+        font-size: 23px;
+        line-height: 32px;
+    }
+}
+
+.al-custom-subtitle {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    max-width: 765px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 48px;
+
+    @include portrait-phone {
+        font-size: 16px;
+    }
+}
+
+.al-custom-card {
+    background: var(--white-color);
+    border: 1px solid #E4E4E7;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 25px;
+    transition: 0.3s;
+
+    &:hover {
+        border-color: var(--secondary-color);
+    }
+
+    @include screen-1400 {
+        min-height: 230px;
+    }
+
+    @include screen-768 {
+        min-height: 250px;
+    }
+
+    @include portrait-phone {
+        min-height: 200px;
+        padding: 20px;
+    }
+}
+
+.al-custom-card-thumb {
+    width: 64px;
+    height: 64px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-custom-card-thumb-color {
+    background-color: #14B8A6;
+}
+
+.al-custom-card-title {
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    @include screen-992 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    @include screen-768 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @include portrait-phone {
+        font-size: 20px;
+    }
+}
+
+.al-custom-card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--paragraph-color);
+    margin: 0 auto;
+
+    @include large-screen {
+        font-size: 13px;
+    }
+}
+
+/****** Custom Section End *********/

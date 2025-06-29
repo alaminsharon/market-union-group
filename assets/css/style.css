@@ -27,6 +27,11 @@ img {
   margin: auto;
   padding: 0 12px; }
 
+.container-1220 {
+  max-width: 1244px;
+  margin: auto;
+  padding: 0 12px; }
+
 .container-1370 {
   max-width: 1394px;
   margin: auto;
@@ -510,7 +515,7 @@ h6 {
       line-height: 35px; } }
   @media (max-width: 575.98px) {
     .al-solution-title {
-      font-size: 25px;
+      font-size: 23px;
       line-height: 25px; } }
 
 .al-solution-subtitle {
@@ -620,6 +625,380 @@ h6 {
   border-radius: 4px; }
 
 /****** Form Section End *********/
+/****** Blog Page *********/
+/****** Hero Blog Section Start *********/
+.al-hero-content-blog {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0 80px 0; }
+  @media (max-width: 1199.98px) {
+    .al-hero-content-blog {
+      padding: 180px 0; } }
+  @media (max-width: 991.98px) {
+    .al-hero-content-blog {
+      padding: 120px 10px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-content-blog {
+      padding: 80px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-content-blog {
+      padding: 40px 10px; } }
+
+.al-hero-title-blog {
+  font-size: 60px;
+  max-width: 1260px;
+  color: var(--white-color);
+  text-align: center;
+  margin: 0 auto;
+  line-height: 60px; }
+  @media (max-width: 991.98px) {
+    .al-hero-title-blog {
+      font-size: 45px;
+      line-height: 45px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-title-blog {
+      font-size: 40px;
+      line-height: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-title-blog {
+      font-size: 25px;
+      line-height: 28px; } }
+
+.al-hero-subtitle-blog {
+  font-size: 24px;
+  line-height: 32px;
+  color: #E5E7EB;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 32px; }
+
+.al-hero-hr-blog {
+  text-align: center;
+  width: 64px;
+  height: 4px;
+  display: inline-block;
+  border-radius: 9999px;
+  background-color: var(--secondary-color);
+  color: var(--secondary-color);
+  opacity: 1;
+  margin: 0; }
+
+/****** Hero Financial Section End *********/
+/****** Blog Section Start *********/
+.al-blog-section {
+  padding: 64px 0 148px 0; }
+
+.al-blog-card-thumb img {
+  border-radius: 8px 8px 0 0; }
+
+.al-blog-content {
+  padding: 24px;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 8px 8px; }
+
+/****** Blog Section End *********/
+/****** Finalcial Solution Page *********/
+/****** Hero Financial Section Start *********/
+.al-hero-content-financial {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 206px 0; }
+  @media (max-width: 1199.98px) {
+    .al-hero-content-financial {
+      padding: 180px 0; } }
+  @media (max-width: 991.98px) {
+    .al-hero-content-financial {
+      padding: 120px 10px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-content-financial {
+      padding: 80px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-content-financial {
+      padding: 40px 10px; } }
+
+.al-hero-title-financial {
+  font-size: 60px;
+  max-width: 1260px;
+  color: var(--white-color);
+  margin: 0 auto;
+  line-height: 60px; }
+  @media (max-width: 991.98px) {
+    .al-hero-title-financial {
+      font-size: 45px;
+      line-height: 45px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-title-financial {
+      font-size: 40px;
+      line-height: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-title-financial {
+      font-size: 25px;
+      line-height: 28px; } }
+
+.al-hero-financial-btn {
+  padding: 10px 29px;
+  background: var(--white-color);
+  color: var(--secondary-color);
+  display: inline-block;
+  margin-top: 24px; }
+
+.al-solution-financial-title {
+  max-width: 1368px;
+  margin-bottom: 24px; }
+
+/****** Hero Financial Section End *********/
+/****** Strength Section Start *********/
+.al-strength-content {
+  background: var(--common-bg);
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-strength-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-strength-content {
+      padding: 40px 10px; } }
+
+.al-strength-title {
+  line-height: 40px;
+  margin-bottom: 48px; }
+  @media (max-width: 575.98px) {
+    .al-strength-title {
+      font-size: 21px;
+      line-height: 30px; } }
+
+.al-strength-item {
+  margin-bottom: 24px; }
+
+.al-strength-item:last-child {
+  margin-bottom: 0; }
+
+.al-strength-item-thumb {
+  width: 40px;
+  height: 40px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0; }
+
+.al-strength-item-thumb-color {
+  background-color: #14B8A6; }
+
+.al-strength-item-subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--paragraph-color); }
+  @media (max-width: 767.98px) {
+    .al-strength-item-subtitle {
+      font-size: 16px;
+      line-height: 24px; } }
+  @media (max-width: 575.98px) {
+    .al-strength-item-subtitle {
+      font-size: 14px;
+      line-height: 20px; } }
+
+@media (max-width: 991.98px) {
+  .al-strength-thumb img {
+    width: 100%; } }
+
+/****** Strength Section End *********/
+/****** Advantage Section Start *********/
+.al-advantage-section {
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-advantage-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-advantage-section {
+      padding: 40px 0; } }
+
+.al-advantage-title {
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 48px; }
+  @media (max-width: 575.98px) {
+    .al-advantage-title {
+      font-size: 30px;
+      line-height: 32px;
+      margin-bottom: 30px; } }
+
+.al-advantage-card {
+  background: transparent;
+  border: 2px solid #F3F4F6;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 34px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-advantage-card:hover {
+    border-color: #DBEAFE; }
+  @media (max-width: 1199.98px) {
+    .al-advantage-card {
+      min-height: 280px; } }
+  @media (max-width: 767.98px) {
+    .al-advantage-card {
+      min-height: 250px; } }
+  @media (max-width: 575.98px) {
+    .al-advantage-card {
+      min-height: 200px;
+      padding: 20px; } }
+
+.al-advantage-card-thumb {
+  width: 64px;
+  height: 64px;
+  background-color: #3B82F6;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.al-advantage-card-thumb-color {
+  background-color: #6B7280; }
+
+.al-advantage-card-title {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 16px; }
+  @media (max-width: 991.98px) {
+    .al-advantage-card-title {
+      font-size: 22px;
+      line-height: 26px; } }
+  @media (max-width: 575.98px) {
+    .al-advantage-card-title {
+      font-size: 20px; } }
+
+.al-advantage-card-subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--paragraph-color);
+  margin: 0 auto; }
+  @media (max-width: 1199.98px) {
+    .al-advantage-card-subtitle {
+      font-size: 16px; } }
+
+/****** Advantage Section End *********/
+/****** Custom Section Start *********/
+.al-custom-content {
+  background: #F9FAFB;
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-custom-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-custom-content {
+      padding: 40px 10px; } }
+
+.al-custom-title {
+  line-height: 40px;
+  text-align: center; }
+  @media (max-width: 575.98px) {
+    .al-custom-title {
+      font-size: 23px;
+      line-height: 32px; } }
+
+.al-custom-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  max-width: 765px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 48px; }
+  @media (max-width: 575.98px) {
+    .al-custom-subtitle {
+      font-size: 16px; } }
+
+.al-custom-card {
+  background: var(--white-color);
+  border: 1px solid #E4E4E7;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 25px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-custom-card:hover {
+    border-color: var(--secondary-color); }
+  @media (max-width: 1399.98px) {
+    .al-custom-card {
+      min-height: 230px; } }
+  @media (max-width: 767.98px) {
+    .al-custom-card {
+      min-height: 250px; } }
+  @media (max-width: 575.98px) {
+    .al-custom-card {
+      min-height: 200px;
+      padding: 20px; } }
+
+.al-custom-card-thumb {
+  width: 64px;
+  height: 64px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.al-custom-card-thumb-color {
+  background-color: #14B8A6; }
+
+.al-custom-card-title {
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 8px; }
+  @media (max-width: 991.98px) {
+    .al-custom-card-title {
+      font-size: 22px;
+      line-height: 26px; } }
+  @media (max-width: 767.98px) {
+    .al-custom-card-title {
+      font-size: 16px;
+      line-height: 26px; } }
+  @media (max-width: 575.98px) {
+    .al-custom-card-title {
+      font-size: 20px; } }
+
+.al-custom-card-subtitle {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--paragraph-color);
+  margin: 0 auto; }
+  @media (max-width: 1199.98px) {
+    .al-custom-card-subtitle {
+      font-size: 13px; } }
+
+/****** Custom Section End *********/
 /****** Quality Insurance Page *********/
 .al-hero-content-single {
   background-position: center center;
@@ -670,7 +1049,7 @@ h6 {
       padding: 40px 10px; } }
 
 .al-cost-card {
-  background: #FFFFFF;
+  background: var(--white-color);
   -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
