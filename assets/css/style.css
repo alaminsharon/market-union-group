@@ -184,6 +184,10 @@ h6 {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  @media (max-width: 1199.98px) {
+    .al-header-nav {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
   .al-header-nav li a {
     font-size: 16px;
     font-weight: 600;
@@ -197,6 +201,9 @@ h6 {
     transition: 0.3s; }
     .al-header-nav li a:hover {
       color: var(--secondary-color); }
+    @media (max-width: 1399.98px) {
+      .al-header-nav li a {
+        font-size: 14px; } }
 
 .mobile-toggle .header_toggle_btn {
   background-color: var(--secondary-color);
@@ -608,8 +615,43 @@ h6 {
 
 /****** Form Section End *********/
 /****** Quality Insurance Page *********/
+.al-hero-section-quality {
+  padding: 187px 0; }
+  @media (max-width: 991.98px) {
+    .al-hero-section-quality {
+      padding: 120px 0; } }
+  @media (max-width: 767.98px) {
+    .al-hero-section-quality {
+      padding: 80px 0; } }
+  @media (max-width: 575.98px) {
+    .al-hero-section-quality {
+      padding: 40px 0; } }
+
+.al-hero-title-quality {
+  font-size: 60px;
+  max-width: 1260px;
+  color: var(--white-color);
+  margin: 0 auto;
+  line-height: 60px; }
+  @media (max-width: 991.98px) {
+    .al-hero-title-quality {
+      font-size: 45px;
+      line-height: 45px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-title-quality {
+      font-size: 40px;
+      line-height: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-title-quality {
+      font-size: 25px;
+      line-height: 28px; } }
+
+.al-hero-subtitle-quality {
+  color: #E5E7EB; }
+
 /****** Cost Section Start *********/
 .al-cost-section {
+  background: #F9FAFB;
   padding: 80px 0; }
   @media (max-width: 767.98px) {
     .al-cost-section {
@@ -617,6 +659,65 @@ h6 {
   @media (max-width: 575.98px) {
     .al-cost-section {
       padding: 40px 0; } }
+
+.al-cost-card {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 32px; }
+  @media (max-width: 1399.98px) {
+    .al-cost-card {
+      min-height: 300px; } }
+  @media (max-width: 767.98px) {
+    .al-cost-card {
+      min-height: 350px; } }
+  @media (max-width: 575.98px) {
+    .al-cost-card {
+      min-height: 250px;
+      padding: 20px; } }
+
+.al-cost-card-thumb {
+  width: 64px;
+  height: 64px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.al-cost-card-title {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 8px; }
+  @media (max-width: 991.98px) {
+    .al-cost-card-title {
+      font-size: 22px;
+      line-height: 26px; } }
+  @media (max-width: 767.98px) {
+    .al-cost-card-title {
+      font-size: 16px;
+      line-height: 26px; } }
+  @media (max-width: 575.98px) {
+    .al-cost-card-title {
+      font-size: 20px; } }
+
+.al-cost-card-subtitle {
+  font-size: 16px;
+  line-height: 26px;
+  color: #4B5563;
+  margin: 0 auto; }
+  @media (max-width: 1199.98px) {
+    .al-cost-card-subtitle {
+      font-size: 13px; } }
 
 /****** Cost Section End *********/
 /****** Quality Section Start *********/
@@ -631,6 +732,14 @@ h6 {
 
 .al-quality-title {
   line-height: 48px; }
+  @media (max-width: 767.98px) {
+    .al-quality-title {
+      font-size: 35px;
+      line-height: 35px; } }
+  @media (max-width: 575.98px) {
+    .al-quality-title {
+      font-size: 26px;
+      line-height: 30px; } }
 
 .al-quality-subtitle {
   font-size: 20px;
@@ -640,7 +749,8 @@ h6 {
   color: #4B5563; }
   @media (max-width: 575.98px) {
     .al-quality-subtitle {
-      font-size: 16px; } }
+      font-size: 16px;
+      margin-bottom: 30px; } }
 
 .al-quality-card-subtitle {
   line-height: 24px;
@@ -650,16 +760,26 @@ h6 {
   margin-top: 24px;
   margin-bottom: 16px; }
 
-.certifications {
+.al-quality-card-thumb img {
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1); }
+  @media (max-width: 991.98px) {
+    .al-quality-card-thumb img {
+      width: 100%; } }
+
+.al-quality-card-meta {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px; }
+  gap: 16px; }
+  @media (max-width: 767.98px) {
+    .al-quality-card-meta {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
 
-.box {
-  padding: 20px 30px;
-  border: 1px solid #dcdfe6;
-  border-radius: 10px;
+.al-quality-card-box {
+  padding: 14px 44px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,8 +789,8 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-width: 100px;
-  height: 70px; }
+  border: 2px solid #E5E7EB;
+  border-radius: 8px; }
 
 .badge {
   padding: 5px 15px;
@@ -680,12 +800,12 @@ h6 {
   font-size: 14px; }
 
 .badge.blue {
-  color: #007bff;
-  border-color: #007bff; }
+  color: #2563EB;
+  border-color: #2563EB; }
 
 .badge.green {
-  color: #28a745;
-  border-color: #28a745; }
+  color: #16A34A;
+  border-color: #16A34A; }
 
 /****** Quality Section End *********/
 /******** theme file **********/

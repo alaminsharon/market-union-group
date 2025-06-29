@@ -1,7 +1,50 @@
 /****** Quality Insurance Page *********/
+.al-hero-section-quality {
+    padding: 187px 0;
+
+    @include screen-992 {
+        padding: 120px 0;
+    }
+
+    @include screen-768 {
+        padding: 80px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-hero-title-quality {
+    font-size: 60px;
+    max-width: 1260px;
+    color: var(--white-color);
+    margin: 0 auto;
+    line-height: 60px;
+
+    @include screen-992 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    @include screen-768 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    @include portrait-phone {
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+.al-hero-subtitle-quality {
+    color: #E5E7EB;
+}
 
 /****** Cost Section Start *********/
 .al-cost-section {
+    background: #F9FAFB;
     padding: 80px 0;
 
     @include screen-768 {
@@ -12,6 +55,70 @@
         padding: 40px 0;
     }
 }
+
+.al-cost-card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 32px;
+
+    @include screen-1400 {
+        min-height: 300px;
+    }
+
+    @include screen-768 {
+        min-height: 350px;
+    }
+
+    @include portrait-phone {
+        min-height: 250px;
+        padding: 20px;
+    }
+}
+
+.al-cost-card-thumb {
+    width: 64px;
+    height: 64px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-cost-card-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 8px;
+
+    @include screen-992 {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    @include screen-768 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    @include portrait-phone {
+        font-size: 20px;
+    }
+}
+
+.al-cost-card-subtitle {
+    font-size: 16px;
+    line-height: 26px;
+    color: #4B5563;
+    margin: 0 auto;
+
+    @include large-screen {
+        font-size: 13px;
+    }
+}
+
 /****** Cost Section End *********/
 
 /****** Quality Section Start *********/
@@ -29,6 +136,16 @@
 
 .al-quality-title {
     line-height: 48px;
+
+    @include screen-768 {
+        font-size: 35px;
+        line-height: 35px;
+    }
+
+    @include portrait-phone {
+        font-size: 26px;
+        line-height: 30px;
+    }
 }
 
 .al-quality-subtitle {
@@ -40,6 +157,7 @@
 
     @include portrait-phone {
         font-size: 16px;
+        margin-bottom: 30px;
     }
 }
 
@@ -53,20 +171,33 @@
     margin-bottom: 16px;
 }
 
-.certifications {
-    display: flex;
-    gap: 20px;
+
+.al-quality-card-thumb {
+    img {
+        border-radius: 8px;
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+        @include screen-992 {
+            width: 100%;
+        }
+    }
 }
 
-.box {
-    padding: 20px 30px;
-    border: 1px solid #dcdfe6;
-    border-radius: 10px;
+.al-quality-card-meta {
+    display: flex;
+    gap: 16px;
+
+    @include screen-768 {
+        flex-wrap: wrap;
+    }
+}
+
+.al-quality-card-box {
+    padding: 14px 44px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100px;
-    height: 70px;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
 }
 
 .badge {
@@ -78,13 +209,13 @@
 }
 
 .badge.blue {
-    color: #007bff;
-    border-color: #007bff;
+    color: #2563EB;
+    border-color: #2563EB;
 }
 
 .badge.green {
-    color: #28a745;
-    border-color: #28a745;
+    color: #16A34A;
+    border-color: #16A34A;
 }
 
 /****** Quality Section End *********/

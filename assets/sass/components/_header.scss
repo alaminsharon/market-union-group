@@ -13,6 +13,9 @@
 .al-header-nav {
     display: flex;
     justify-content: flex-end;
+    @include large-screen {
+        flex-wrap: wrap;
+    }
 
     li {
         a {
@@ -27,6 +30,9 @@
 
             &:hover {
                 color: var(--secondary-color);
+            }
+            @include screen-1400 {
+                font-size: 14px;
             }
         }
     }
