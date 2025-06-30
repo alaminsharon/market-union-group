@@ -52,10 +52,12 @@
     margin: 0 auto;
     margin-top: 24px;
     margin-bottom: 32px;
+
     @include screen-768 {
         font-size: 20px;
         line-height: 26px;
     }
+
     @include portrait-phone {
         font-size: 18px;
         line-height: 22px;
@@ -79,8 +81,59 @@
 /****** Hero Financial Section End *********/
 
 /****** Blog Section Start *********/
-.al-blog-section {
+.al-blog-btn-group {
+    background: var(--common-bg);
+    padding: 48px 0;
+
+    @include screen-768 {
+        padding: 35px 10px;
+    }
+}
+
+.blog-nav-tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+
+    button {
+        color: var(--paragraph-color);
+        background: #FFFFFF;
+        border: 1px solid #E5E7EB !important;
+        border-radius: 6px;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 9px 17px;
+        transition: 0.3s;
+
+        &:hover {
+            color: var(--secondary-color) !important;
+        }
+
+        &.active {
+            color: var(--white-color) !important;
+            background-color: var(--secondary-color) !important;
+            border-color: var(--secondary-color);
+        }
+    }
+}
+
+.al-blog-bottom {
     padding: 64px 0 148px 0;
+
+    @include screen-992 {
+        padding: 40px 0 110px 0;
+    }
+
+    @include screen-768 {
+        padding: 30px 0 80px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
 }
 
 .al-blog-card-thumb {
@@ -165,13 +218,16 @@
     gap: 8px;
     justify-content: center;
     margin-top: 112px;
+
     @include screen-992 {
         margin-top: 70px;
     }
+
     @include portrait-phone {
         flex-wrap: wrap;
         margin-top: 40px;
     }
+
     li {
         a {
             padding: 10px 17px;
@@ -191,4 +247,5 @@
     color: var(--white-color);
     border-color: var(--secondary-color);
 }
+
 /****** Blog Section End *********/

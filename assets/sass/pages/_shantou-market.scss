@@ -111,6 +111,7 @@
 .al-core-title {
     text-align: center;
     line-height: 40px;
+
     @include portrait-phone {
         font-size: 26px;
         line-height: 30px;
@@ -125,6 +126,7 @@
     margin: 0 auto;
     margin-top: 16px;
     margin-bottom: 64px;
+
     @include portrait-phone {
         font-size: 16px;
         line-height: 22px;
@@ -169,6 +171,7 @@
     @include screen-992 {
         padding: 20px;
     }
+
     @include screen-768 {
         min-height: 160px;
     }
@@ -176,9 +179,11 @@
 
 .al-core-card-title {
     line-height: 32px;
+
     @include screen-992 {
         font-size: 22px;
     }
+
     @include portrait-phone {
         font-size: 18px;
     }
@@ -187,6 +192,7 @@
 .al-core-card-subtitle {
     line-height: 26px;
     margin-top: 16px;
+
     @include portrait-phone {
         margin-top: 10px;
     }
@@ -194,15 +200,114 @@
 
 /****** Core Section End *********/
 
+/****** Local Section Start *********/
+.al-local-section {
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-local-title {
+    text-align: center;
+    line-height: 40px;
+}
+
+.al-local-subtitle {
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+
+    @include portrait-phone {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+.al-local-card-thumb {
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+
+    @include screen-992 {
+        width: 100%;
+    }
+}
+
+.al-local-card-content {
+    background: var(--white-color);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    padding: 16px;
+}
+
+.al-local-card-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.al-local-item {
+    background: linear-gradient(135deg, #FFFFFF 0%, #FAF5FF 100%);
+    border: 1px solid #F3F4F6;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 33px;
+    min-height: 208px;
+}
+
+.al-local-item-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(242, 52, 129, 0.1);
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-local-item-title {
+    line-height: 28px;
+    font-weight: 600;
+    @include screen-992 {
+        font-size: 18px;
+    }
+}
+
+.al-local-item-subtitle {
+    line-height: 26px;
+    margin-top: 16px;
+}
+/****** Local Section End *********/
+
 /****** WCS Section Start *********/
 .al-wcs-content {
     background: linear-gradient(135deg, rgba(242, 52, 129, 0.05) 99.99%, #FAF5FF 100%);
     padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
 }
 
 .al-wcs-title {
     text-align: center;
     line-height: 40px;
+
+    @include portrait-phone {
+        font-size: 32px;
+    }
 }
 
 .al-wcs-subtitle {
@@ -211,6 +316,11 @@
     line-height: 28px;
     margin-top: 16px;
     margin-bottom: 64px;
+
+    @include portrait-phone {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 }
 
 .al-wcs-card-thumb {
@@ -237,4 +347,5 @@
     line-height: 20px;
     text-align: center;
 }
+
 /****** WCS Section End *********/
