@@ -65,9 +65,17 @@
     background: var(--secondary-color);
     color: var(--white-color);
     display: inline-block;
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+        i {
+            transform: translateX(50%);
+        }
+    }
 
     i {
-        margin-left: 16px;
+        color: var(--white-color);
+        padding-left: 16px;
     }
 }
 
@@ -154,7 +162,6 @@
 .al-support-card-subtitle {
     font-size: 14px;
     line-height: 20px;
-    color: var(--paragraph-color);
 }
 
 /****** Support Section End *********/
@@ -207,7 +214,6 @@
 .al-service-card-subtitle {
     font-size: 14px;
     line-height: 24px;
-    color: var(--paragraph-color);
     max-width: 155px;
     margin: 0 auto;
 }
@@ -250,7 +256,6 @@
 .al-work-card-subtitle {
     font-size: 16px;
     line-height: 24px;
-    color: var(--paragraph-color);
 }
 
 /****** Work Section End *********/

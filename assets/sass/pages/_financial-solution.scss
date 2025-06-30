@@ -111,7 +111,6 @@
 .al-strength-item-subtitle {
     font-size: 18px;
     line-height: 28px;
-    color: var(--paragraph-color);
     @include screen-768 {
         font-size: 16px;
         line-height: 24px;
@@ -216,7 +215,6 @@
 .al-advantage-card-subtitle {
     font-size: 18px;
     line-height: 28px;
-    color: var(--paragraph-color);
     margin: 0 auto;
 
     @include large-screen {
@@ -329,7 +327,6 @@
 .al-custom-card-subtitle {
     font-size: 16px;
     line-height: 24px;
-    color: var(--paragraph-color);
     margin: 0 auto;
 
     @include large-screen {

@@ -117,7 +117,6 @@
 .al-cost-card-subtitle {
     font-size: 16px;
     line-height: 26px;
-    color: var(--paragraph-color);
     margin: 0 auto;
 
     @include large-screen {
@@ -159,7 +158,6 @@
     line-height: 28px;
     margin-top: 16px;
     margin-bottom: 64px;
-    color: var(--paragraph-color);
 
     @include portrait-phone {
         font-size: 16px;
@@ -179,7 +177,6 @@
 
 .al-quality-card-subtitle {
     line-height: 24px;
-    color: var(--paragraph-color);
 }
 
 .al-quality-card-subtitle-margin {
