@@ -73,6 +73,39 @@
 
 /****** Hero Product Section End *********/
 
+/****** Product Section Start *********/
+.al-product-content-top {
+    padding: 64px 0;
+}
+
+.al-product-content-top-title {
+    text-align: center;
+    line-height: 36px;
+    margin-bottom: 48px;
+}
+
+.al-product-card-thumb {
+    border-radius: 8px 8px 0 0;
+}
+
+.al-product-card-content {
+    background: var(--white-color);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 8px 8px;
+    padding: 24px;
+}
+
+.al-product-card-title {
+    line-height: 28px;
+    font-weight: 600;
+}
+
+.al-product-content-bottom {
+    background-color: var(--common-bg);
+    padding: 64px 0;
+}
+/****** Product Section Start *********/
+
 /****** Solution Product Section Start *********/
 .al-solution-product-content {
     background-color: var(--secondary-color);
