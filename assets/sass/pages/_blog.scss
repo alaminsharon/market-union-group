@@ -8,11 +8,7 @@
     padding: 140px 0 80px 0;
 
     @include large-screen {
-        padding: 180px 0;
-    }
-
-    @include screen-992 {
-        padding: 120px 10px;
+        padding: 100px 10px;
     }
 
     @include screen-768 {
@@ -56,6 +52,16 @@
     margin: 0 auto;
     margin-top: 24px;
     margin-bottom: 32px;
+    @include screen-768 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    @include portrait-phone {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
 }
 
 .al-hero-hr-blog {

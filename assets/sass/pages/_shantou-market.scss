@@ -6,6 +6,18 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 193px 0;
+
+    @include large-screen {
+        padding: 120px 10px;
+    }
+
+    @include screen-768 {
+        padding: 80px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
 }
 
 .al-hero-title-shantou {
@@ -41,9 +53,16 @@
 
     @include screen-768 {
         font-size: 18px;
+        line-height: 24xpx;
         margin-top: 10px;
         margin-bottom: 15px;
     }
+
+    @include portrait-phone {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
 }
 
 .al-hero-shantou-btn {
@@ -57,6 +76,80 @@
         color: var(--secondary-color);
         padding-left: 16px;
     }
+
+    @include portrait-phone {
+        padding: 10px 15px;
+    }
 }
 
 /****** Hero Shantou Section End *********/
+
+.al-solution-shantou-subtitle {
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    @include portrait-phone {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+/****** Core Section Start *********/
+.al-core-content {
+    background: var(--common-bg);
+    padding: 80px 0;
+}
+
+.al-core-title {
+    text-align: center;
+    line-height: 40px;
+}
+
+.al-core-subtitle {
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.al-core-thumb {
+    position: relative;
+
+    img {
+        border-radius: 16px 16px 0 0;
+    }
+
+    .al-core-thumb-icon {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        width: 48px;
+        height: 48px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(2px);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.al-core-card-content {
+    padding: 32px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 16px 16px;
+}
+
+.al-core-card-title {
+    line-height: 32px;
+}
+
+.al-core-card-subtitle {
+    line-height: 26px;
+    margin-top: 16px;
+}
+/****** Core Section End *********/
