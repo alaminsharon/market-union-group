@@ -98,11 +98,23 @@
 .al-core-content {
     background: var(--common-bg);
     padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
 }
 
 .al-core-title {
     text-align: center;
     line-height: 40px;
+    @include portrait-phone {
+        font-size: 26px;
+        line-height: 30px;
+    }
 }
 
 .al-core-subtitle {
@@ -113,14 +125,16 @@
     margin: 0 auto;
     margin-top: 16px;
     margin-bottom: 64px;
+    @include portrait-phone {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 }
 
 .al-core-thumb {
     position: relative;
-
-    img {
-        border-radius: 16px 16px 0 0;
-    }
 
     .al-core-thumb-icon {
         position: absolute;
@@ -138,18 +152,64 @@
     }
 }
 
+.al-core-img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+}
+
 .al-core-card-content {
     padding: 32px;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
     border-radius: 0 0 16px 16px;
+
+    @include large-screen {
+        min-height: 190px;
+    }
+
+    @include screen-992 {
+        padding: 20px;
+    }
+    @include screen-768 {
+        min-height: 160px;
+    }
 }
 
 .al-core-card-title {
     line-height: 32px;
+    @include screen-992 {
+        font-size: 22px;
+    }
+    @include portrait-phone {
+        font-size: 18px;
+    }
 }
 
 .al-core-card-subtitle {
     line-height: 26px;
     margin-top: 16px;
+    @include portrait-phone {
+        margin-top: 10px;
+    }
 }
+
 /****** Core Section End *********/
+
+/****** WCS Section Start *********/
+.al-wcs-content {
+    background: linear-gradient(135deg, rgba(242, 52, 129, 0.05) 99.99%, #FAF5FF 100%);
+    padding: 80px 0;
+}
+
+.al-wcs-title {
+    text-align: center;
+    line-height: 40px;
+}
+
+.al-wcs-subtitle {
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+/****** WCS Section End *********/

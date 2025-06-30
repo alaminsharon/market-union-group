@@ -714,10 +714,20 @@ h6 {
 .al-core-content {
   background: var(--common-bg);
   padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-core-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-core-content {
+      padding: 40px 10px; } }
 
 .al-core-title {
   text-align: center;
   line-height: 40px; }
+  @media (max-width: 575.98px) {
+    .al-core-title {
+      font-size: 26px;
+      line-height: 30px; } }
 
 .al-core-subtitle {
   font-size: 20px;
@@ -727,11 +737,15 @@ h6 {
   margin: 0 auto;
   margin-top: 16px;
   margin-bottom: 64px; }
+  @media (max-width: 575.98px) {
+    .al-core-subtitle {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 10px;
+      margin-bottom: 30px; } }
 
 .al-core-thumb {
   position: relative; }
-  .al-core-thumb img {
-    border-radius: 16px 16px 0 0; }
   .al-core-thumb .al-core-thumb-icon {
     position: absolute;
     top: 16px;
@@ -754,20 +768,61 @@ h6 {
     -ms-flex-pack: center;
     justify-content: center; }
 
+.al-core-img {
+  border-radius: 16px 16px 0 0;
+  width: 100%; }
+
 .al-core-card-content {
   padding: 32px;
   -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 16px 16px; }
+  @media (max-width: 1199.98px) {
+    .al-core-card-content {
+      min-height: 190px; } }
+  @media (max-width: 991.98px) {
+    .al-core-card-content {
+      padding: 20px; } }
+  @media (max-width: 767.98px) {
+    .al-core-card-content {
+      min-height: 160px; } }
 
 .al-core-card-title {
   line-height: 32px; }
+  @media (max-width: 991.98px) {
+    .al-core-card-title {
+      font-size: 22px; } }
+  @media (max-width: 575.98px) {
+    .al-core-card-title {
+      font-size: 18px; } }
 
 .al-core-card-subtitle {
   line-height: 26px;
   margin-top: 16px; }
+  @media (max-width: 575.98px) {
+    .al-core-card-subtitle {
+      margin-top: 10px; } }
 
 /****** Core Section End *********/
+/****** WCS Section Start *********/
+.al-wcs-content {
+  background: -webkit-linear-gradient(315deg, rgba(242, 52, 129, 0.05) 99.99%, #FAF5FF 100%);
+  background: -o-linear-gradient(315deg, rgba(242, 52, 129, 0.05) 99.99%, #FAF5FF 100%);
+  background: linear-gradient(135deg, rgba(242, 52, 129, 0.05) 99.99%, #FAF5FF 100%);
+  padding: 80px 0; }
+
+.al-wcs-title {
+  text-align: center;
+  line-height: 40px; }
+
+.al-wcs-subtitle {
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 64px; }
+
+/****** WCS Section End *********/
 /****** Product Page *********/
 /****** Hero Product Section Start *********/
 .al-hero-content-product {
