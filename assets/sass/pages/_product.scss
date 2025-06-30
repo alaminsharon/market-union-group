@@ -38,7 +38,7 @@
     }
 
     @include portrait-phone {
-        font-size: 25px;
+        font-size: 30px;
         line-height: 28px;
     }
 }
@@ -49,6 +49,12 @@
     color: #E5E7EB;
     margin-top: 24px;
     margin-bottom: 32px;
+
+    @include screen-768 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
 }
 
 .al-hero-product-btn {
@@ -65,9 +71,70 @@
     }
 }
 
-.al-solution-financial-title {
-    max-width: 1368px;
-    margin-bottom: 24px;
+/****** Hero Product Section End *********/
+
+/****** Solution Product Section Start *********/
+.al-solution-product-content {
+    background-color: var(--secondary-color);
+    padding: 64px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
 }
 
-/****** Hero Product Section End *********/
+.al-solution-product-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--white-color);
+    max-width: 930px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+
+    @include portrait-phone {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+.al-product-btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.al-solution-product-btn-one {
+    padding: 10px 29px;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+
+    img {
+        margin-right: 12px;
+    }
+}
+
+.al-solution-product-btn-two {
+    padding: 10px 29px;
+    background: transparent;
+    color: var(--white-color);
+    border: 1px solid var(--white-color);
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+
+    i {
+        margin-left: 16px;
+    }
+}
+
+/****** Solution Product Section End *********/
