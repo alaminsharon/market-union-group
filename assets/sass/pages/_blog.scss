@@ -80,6 +80,10 @@
 .al-blog-card-thumb {
     img {
         border-radius: 12px 12px 0 0;
+
+        @include screen-992 {
+            width: 100%;
+        }
     }
 }
 
@@ -113,8 +117,14 @@
         margin-top: 12px;
         margin-bottom: 12px;
         transition: 0.3s;
+
         &:hover {
             color: var(--secondary-color);
+        }
+
+        @include large-screen {
+            font-size: 16px;
+            line-height: 22px;
         }
     }
 }
@@ -122,6 +132,10 @@
 .al-blog-subtitle {
     line-height: 24px;
     margin-bottom: 12px;
+
+    @include large-screen {
+        font-size: 14px;
+    }
 }
 
 .al-blog-content-bottom-author {
@@ -129,6 +143,7 @@
     line-height: 20px;
     font-weight: 400;
     color: var(--paragraph-color);
+
     img {
         margin-right: 8px;
     }
@@ -137,5 +152,37 @@
 .al-blog-content-bottom-number {
     font-size: 14px;
     line-height: 20px;
+}
+
+.page-pagination {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 112px;
+    @include screen-992 {
+        margin-top: 70px;
+    }
+    @include portrait-phone {
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    li {
+        a {
+            padding: 10px 17px;
+            background: transparent;
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            color: var(--paragraph-color);
+            border: 1px solid #E5E7EB;
+            border-radius: 6px;
+        }
+    }
+}
+
+.page-pagination li a.active {
+    background: var(--secondary-color);
+    color: var(--white-color);
+    border-color: var(--secondary-color);
 }
 /****** Blog Section End *********/

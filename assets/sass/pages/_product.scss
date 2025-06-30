@@ -1,0 +1,73 @@
+/****** Product Page *********/
+
+/****** Hero Product Section Start *********/
+.al-hero-content-product {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
+}
+
+.al-hero-title-product {
+    font-size: 60px;
+    max-width: 1050px;
+    color: var(--white-color);
+    margin: 0 auto;
+    line-height: 60px;
+
+    span {
+        color: var(--secondary-color);
+    }
+
+    @include screen-992 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    @include screen-768 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    @include portrait-phone {
+        font-size: 25px;
+        line-height: 28px;
+    }
+}
+
+.al-hero-subtitle-product {
+    font-size: 20px;
+    line-height: 28px;
+    color: #E5E7EB;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+.al-hero-product-btn {
+    padding: 10px 29px;
+    background: var(--secondary-color);
+    color: var(--white-color);
+    border-radius: 9999px;
+    display: inline-block;
+    margin-top: 24px;
+
+    i {
+        color: var(--white-color);
+        padding-left: 16px;
+    }
+}
+
+.al-solution-financial-title {
+    max-width: 1368px;
+    margin-bottom: 24px;
+}
+
+/****** Hero Product Section End *********/
