@@ -212,4 +212,29 @@
     margin-top: 16px;
     margin-bottom: 64px;
 }
+
+.al-wcs-card-thumb {
+    width: 64px;
+    height: 64px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-wcs-card-title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.al-wcs-card-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
 /****** WCS Section End *********/
