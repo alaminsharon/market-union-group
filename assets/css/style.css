@@ -325,18 +325,28 @@ h6 {
   background: var(--secondary-color);
   color: var(--white-color);
   display: inline-block;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s; }
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
   .al-hero-btn:hover {
-    background-color: var(--primary-color); }
+    background-color: var(--primary-color);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
     .al-hero-btn:hover i {
-      -webkit-transform: translateX(50%);
-      -ms-transform: translateX(50%);
-      transform: translateX(50%); }
+      -webkit-transform: translateX(6px);
+      -ms-transform: translateX(6px);
+      transform: translateX(6px); }
   .al-hero-btn i {
     color: var(--white-color);
-    padding-left: 16px; }
+    padding-left: 16px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
 
 /****** Hero Section End *********/
 /****** Support Section Start *********/
@@ -544,9 +554,31 @@ h6 {
   padding: 10px 29px;
   background: var(--white-color);
   color: var(--secondary-color);
-  display: inline-block; }
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .al-solution-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    -webkit-transform: translateY(-2px);
+    -ms-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
+    .al-solution-btn:hover i {
+      -webkit-transform: translateX(6px);
+      -ms-transform: translateX(6px);
+      transform: translateX(6px);
+      color: var(--white-color); }
   .al-solution-btn i {
-    margin-left: 16px; }
+    color: var(--secondary-color);
+    padding-left: 16px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
 
 /****** Solution Section End *********/
 /****** Form Section Start *********/
@@ -626,12 +658,17 @@ h6 {
   box-sizing: border-box;
   padding: 15px 20px;
   background-color: var(--secondary-color);
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
   display: block;
-  border-radius: 4px; }
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-form-btn:hover {
+    background-color: var(--primary-color); }
 
 /****** Form Section End *********/
 /****** Shantou Market Page *********/

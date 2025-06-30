@@ -65,17 +65,22 @@
     background: var(--secondary-color);
     color: var(--white-color);
     display: inline-block;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+
     &:hover {
         background-color: var(--primary-color);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
         i {
-            transform: translateX(50%);
+            transform: translateX(6px);
         }
     }
 
     i {
         color: var(--white-color);
         padding-left: 16px;
+        transition: transform 0.3s ease;
     }
 }
 
@@ -312,11 +317,27 @@
     background: var(--white-color);
     color: var(--secondary-color);
     display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+        i {
+            transform: translateX(6px);
+            color: var(--white-color);
+        }
+    }
 
     i {
-        margin-left: 16px;
+        color: var(--secondary-color);
+        padding-left: 16px;
+        transition: transform 0.3s ease;
     }
 }
+
 
 /****** Solution Section End *********/
 
@@ -408,12 +429,16 @@
     box-sizing: border-box;
     padding: 15px 20px;
     background-color: var(--secondary-color);
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
     display: block;
     border-radius: 4px;
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+    }
 }
 
 /****** Form Section End *********/
