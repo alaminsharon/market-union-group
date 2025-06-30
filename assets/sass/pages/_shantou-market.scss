@@ -1,0 +1,62 @@
+/****** Shantou Market Page *********/
+
+/****** Hero Shantou Section Start *********/
+.al-hero-content-shantou {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 193px 0;
+}
+
+.al-hero-title-shantou {
+    max-width: 1400px;
+    color: var(--white-color);
+    margin: 0 auto;
+    line-height: 48px;
+
+    @include screen-992 {
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    @include screen-768 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    @include portrait-phone {
+        font-size: 30px;
+        line-height: 28px;
+    }
+}
+
+.al-hero-subtitle-shantou {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--white-color);
+    max-width: 750px;
+    margin: 0 auto;
+    margin-top: 24px;
+    margin-bottom: 32px;
+
+    @include screen-768 {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+}
+
+.al-hero-shantou-btn {
+    padding: 10px 29px;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    border-radius: 6px;
+    display: inline-block;
+
+    i {
+        color: var(--secondary-color);
+        padding-left: 16px;
+    }
+}
+
+/****** Hero Shantou Section End *********/

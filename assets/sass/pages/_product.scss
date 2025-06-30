@@ -76,16 +76,26 @@
 /****** Product Section Start *********/
 .al-product-content-top {
     padding: 64px 0;
+    @include portrait-phone {
+        padding: 40px 0;
+    }
 }
 
 .al-product-content-top-title {
     text-align: center;
     line-height: 36px;
     margin-bottom: 48px;
+    @include portrait-phone {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }
 
 .al-product-card-thumb {
     border-radius: 8px 8px 0 0;
+    @include screen-992 {
+        width: 100%;
+    }
 }
 
 .al-product-card-content {
@@ -98,13 +108,60 @@
 .al-product-card-title {
     line-height: 28px;
     font-weight: 600;
+    @include screen-768 {
+        font-size: 18px;
+    }
 }
 
 .al-product-content-bottom {
-    background-color: var(--common-bg);
+    background: var(--common-bg);
     padding: 64px 0;
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
 }
+
 /****** Product Section Start *********/
+
+/****** Explore Section Start *********/
+.al-explore-section {
+    padding: 64px 0;
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
+}
+
+.al-explore-title {
+    margin-bottom: 48px;
+    line-height: 36px;
+
+    @include portrait-phone {
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+.al-explore-card-thumb {
+    width: 128px;
+    height: 128px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.al-explore-card-title {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+/****** Explore Section End *********/
 
 /****** Solution Product Section Start *********/
 .al-solution-product-content {

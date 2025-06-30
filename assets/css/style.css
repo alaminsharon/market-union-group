@@ -634,6 +634,57 @@ h6 {
   border-radius: 4px; }
 
 /****** Form Section End *********/
+/****** Shantou Market Page *********/
+/****** Hero Shantou Section Start *********/
+.al-hero-content-shantou {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 193px 0; }
+
+.al-hero-title-shantou {
+  max-width: 1400px;
+  color: var(--white-color);
+  margin: 0 auto;
+  line-height: 48px; }
+  @media (max-width: 991.98px) {
+    .al-hero-title-shantou {
+      font-size: 45px;
+      line-height: 45px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-title-shantou {
+      font-size: 40px;
+      line-height: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-title-shantou {
+      font-size: 30px;
+      line-height: 28px; } }
+
+.al-hero-subtitle-shantou {
+  font-size: 20px;
+  line-height: 32px;
+  color: var(--white-color);
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 32px; }
+  @media (max-width: 767.98px) {
+    .al-hero-subtitle-shantou {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 15px; } }
+
+.al-hero-shantou-btn {
+  padding: 10px 29px;
+  background: var(--white-color);
+  color: var(--secondary-color);
+  border-radius: 6px;
+  display: inline-block; }
+  .al-hero-shantou-btn i {
+    color: var(--secondary-color);
+    padding-left: 16px; }
+
+/****** Hero Shantou Section End *********/
 /****** Product Page *********/
 /****** Hero Product Section Start *********/
 .al-hero-content-product {
@@ -696,14 +747,24 @@ h6 {
 /****** Product Section Start *********/
 .al-product-content-top {
   padding: 64px 0; }
+  @media (max-width: 575.98px) {
+    .al-product-content-top {
+      padding: 40px 0; } }
 
 .al-product-content-top-title {
   text-align: center;
   line-height: 36px;
   margin-bottom: 48px; }
+  @media (max-width: 575.98px) {
+    .al-product-content-top-title {
+      font-size: 24px;
+      margin-bottom: 20px; } }
 
 .al-product-card-thumb {
   border-radius: 8px 8px 0 0; }
+  @media (max-width: 991.98px) {
+    .al-product-card-thumb {
+      width: 100%; } }
 
 .al-product-card-content {
   background: var(--white-color);
@@ -715,8 +776,57 @@ h6 {
 .al-product-card-title {
   line-height: 28px;
   font-weight: 600; }
+  @media (max-width: 767.98px) {
+    .al-product-card-title {
+      font-size: 18px; } }
+
+.al-product-content-bottom {
+  background: var(--common-bg);
+  padding: 64px 0; }
+  @media (max-width: 575.98px) {
+    .al-product-content-bottom {
+      padding: 40px 10px; } }
 
 /****** Product Section Start *********/
+/****** Explore Section Start *********/
+.al-explore-section {
+  padding: 64px 0; }
+  @media (max-width: 575.98px) {
+    .al-explore-section {
+      padding: 40px 0; } }
+
+.al-explore-title {
+  margin-bottom: 48px;
+  line-height: 36px; }
+  @media (max-width: 575.98px) {
+    .al-explore-title {
+      font-size: 22px;
+      line-height: 24px;
+      margin-bottom: 30px; } }
+
+.al-explore-card-thumb {
+  width: 128px;
+  height: 128px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.al-explore-card-title {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0 auto;
+  margin-top: 16px; }
+
+/****** Explore Section End *********/
 /****** Solution Product Section Start *********/
 .al-solution-product-content {
   background-color: var(--secondary-color);
