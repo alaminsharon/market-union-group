@@ -671,7 +671,227 @@ h6 {
     background-color: var(--primary-color); }
 
 /****** Form Section End *********/
+/****** Yiwu Market Page *********/
+/****** Hero Yiwu Section Start *********/
+.al-hero-content-yiwu {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 130px 0; }
+  @media (max-width: 1199.98px) {
+    .al-hero-content-yiwu {
+      padding: 100px 10px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-content-yiwu {
+      padding: 60px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-content-yiwu {
+      padding: 40px 10px; } }
+
+.al-hero-top-yiwu {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--white-color);
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 9999px;
+  padding: 3px 11px; }
+
+.al-hero-title-yiwu {
+  max-width: 550px;
+  font-size: 60px;
+  color: var(--white-color);
+  margin: 0 auto;
+  margin-top: 24px;
+  line-height: 60px; }
+  @media (max-width: 991.98px) {
+    .al-hero-title-yiwu {
+      font-size: 45px;
+      line-height: 45px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-title-yiwu {
+      font-size: 40px;
+      line-height: 40px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-title-yiwu {
+      font-size: 30px;
+      line-height: 28px; } }
+
+.al-hero-subtitle-yiwu {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--white-color);
+  max-width: 750px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 32px; }
+  @media (max-width: 767.98px) {
+    .al-hero-subtitle-yiwu {
+      font-size: 18px;
+      line-height: 24xpx;
+      margin-top: 10px;
+      margin-bottom: 15px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-subtitle-yiwu {
+      font-size: 16px;
+      line-height: 22px; } }
+
+.al-hero-yiwu-btn {
+  padding: 10px 29px;
+  background: var(--white-color);
+  color: var(--secondary-color);
+  border-radius: 6px;
+  display: inline-block; }
+  .al-hero-yiwu-btn i {
+    color: var(--secondary-color);
+    padding-left: 16px; }
+  @media (max-width: 575.98px) {
+    .al-hero-yiwu-btn {
+      padding: 10px 15px; } }
+
+/****** Hero Shantou Section End *********/
 /****** Guangzhou Market Page *********/
+/****** Coverage Section Start *********/
+.al-coverage-content {
+  background: var(--common-bg);
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-coverage-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-coverage-content {
+      padding: 40px 10px; } }
+
+.al-coverage-title {
+  text-align: center;
+  line-height: 40px; }
+  @media (max-width: 575.98px) {
+    .al-coverage-title {
+      font-size: 26px; } }
+
+.al-coverage-subtitle {
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 64px; }
+  @media (max-width: 575.98px) {
+    .al-coverage-subtitle {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 16px; } }
+
+.al-coverage-card {
+  background: var(--white-color);
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  min-height: 650px; }
+  @media (max-width: 575.98px) {
+    .al-coverage-card {
+      min-height: 540px; } }
+
+.al-coverage-card-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(242, 52, 128, 0.1);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto; }
+
+@media (max-width: 767.98px) {
+  .al-coverage-card-thumb {
+    width: 100%; } }
+
+.al-coverage-card-title {
+  font-weight: 600;
+  line-height: 32px;
+  margin-top: 22px;
+  margin-bottom: 16px; }
+  @media (max-width: 991.98px) {
+    .al-coverage-card-title {
+      font-size: 22px; } }
+  @media (max-width: 575.98px) {
+    .al-coverage-card-title {
+      font-size: 19px; } }
+
+.al-coverage-card-subtitle {
+  line-height: 24px;
+  margin-top: 15px; }
+
+/****** Coverage Section End *********/
+/****** Integration Section Start *********/
+.al-integration-section {
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-integration-section {
+      padding: 50px 0px; } }
+  @media (max-width: 575.98px) {
+    .al-integration-section {
+      padding: 40px 0px; } }
+
+.al-integration-title {
+  text-align: center;
+  line-height: 40px; }
+  @media (max-width: 575.98px) {
+    .al-integration-title {
+      font-size: 26px; } }
+
+.al-integration-subtitle {
+  font-size: 20px;
+  text-align: center;
+  line-height: 28px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 64px; }
+  @media (max-width: 575.98px) {
+    .al-integration-subtitle {
+      margin-top: 10px;
+      margin-bottom: 30px; } }
+
+.al-integration-thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 138px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 16px; }
+
+.al-integration-item {
+  background: var(--white-color);
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  border-left: 4px solid var(--secondary-color);
+  padding: 24px;
+  margin-bottom: 24px; }
+
+.al-integration-item:last-child {
+  margin-bottom: 0; }
+
+.al-integration-item-title {
+  color: var(--secondary-color);
+  line-height: 28px;
+  font-weight: 600; }
+
+.al-integration-item-subtitle {
+  line-height: 24px;
+  margin-top: 12px; }
+
+/****** Integration Section End *********/
 /****** Shantou Market Page *********/
 /****** Hero Shantou Section Start *********/
 .al-hero-content-shantou {
@@ -1711,7 +1931,7 @@ h6 {
 
 .al-hero-title-quality {
   font-size: 60px;
-  max-width: 1260px;
+  max-width: 1100px;
   color: var(--white-color);
   margin: 0 auto;
   line-height: 60px; }
