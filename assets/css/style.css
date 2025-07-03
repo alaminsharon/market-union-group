@@ -671,6 +671,20 @@ h6 {
     background-color: var(--primary-color); }
 
 /****** Form Section End *********/
+/****** Custom Design Page *********/
+/****** Hero Single Section Start *********/
+.al-hero-single-content {
+  background-color: var(--secondary-color);
+  padding: 64px 0; }
+
+.al-hero-single-thumb {
+  -webkit-box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 500px; }
+  .al-hero-single-thumb img {
+    border-radius: 8px; }
+
+/****** Hero Single Section End *********/
 /****** Yiwu Market Page *********/
 /****** Hero Yiwu Section Start *********/
 .al-hero-content-yiwu {
@@ -1008,6 +1022,9 @@ h6 {
 .al-disctrict-card-number-three {
   background-color: #A855F7; }
 
+.al-disctrict-card-number-four {
+  background-color: #6366F1; }
+
 .al-district-card-content-title {
   line-height: 36px;
   color: #831843; }
@@ -1021,6 +1038,9 @@ h6 {
 .al-district-card-content-title-three {
   color: #581C87; }
 
+.al-district-card-content-title-four {
+  color: #312E81; }
+
 .al-district-card-content-subtitle {
   color: var(--secondary-color);
   font-size: 16px;
@@ -1032,6 +1052,9 @@ h6 {
 
 .al-district-card-content-subtitle-three {
   color: #A855F7; }
+
+.al-district-card-content-subtitle-four {
+  color: #6366F1; }
 
 .al-district-card-content p {
   line-height: 24px; }
@@ -1063,6 +1086,12 @@ h6 {
 
 .al-district-item-seven {
   border-left: 4px solid #22D3EE; }
+
+.al-district-item-eight {
+  border-left: 4px solid #34D399; }
+
+.al-district-item-nine {
+  border-left: 4px solid #9CA3AF; }
 
 .al-integration-item:last-child {
   margin-bottom: 0; }
@@ -1104,8 +1133,11 @@ h6 {
 .al-district-item-number-span-three {
   color: #9D174D !important; }
 
-.al-district-item-number-span-three {
+.al-district-item-number-span-four {
   color: #6B21A8 !important; }
+
+.al-district-item-number-span-five {
+  color: #1F2937 !important; }
 
 .al-district-item-number-one {
   background-color: #DCFCE7; }

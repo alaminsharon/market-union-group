@@ -378,6 +378,10 @@
     background-color: #A855F7;
 }
 
+.al-disctrict-card-number-four {
+    background-color: #6366F1;
+}
+
 .al-district-card-content-title {
     line-height: 36px;
     color: #831843;
@@ -395,6 +399,10 @@
     color: #581C87;
 }
 
+.al-district-card-content-title-four {
+    color: #312E81;
+}
+
 .al-district-card-content-subtitle {
     color: var(--secondary-color);
     font-size: 16px;
@@ -408,6 +416,10 @@
 
 .al-district-card-content-subtitle-three {
     color: #A855F7;
+}
+
+.al-district-card-content-subtitle-four {
+    color: #6366F1;
 }
 
 .al-district-card-content {
@@ -452,6 +464,14 @@
     border-left: 4px solid #22D3EE;
 }
 
+.al-district-item-eight {
+    border-left: 4px solid #34D399;
+}
+
+.al-district-item-nine {
+    border-left: 4px solid #9CA3AF;
+}
+
 .al-integration-item:last-child {
     margin-bottom: 0;
 }
@@ -490,8 +510,12 @@
     color: #9D174D !important;
 }
 
-.al-district-item-number-span-three {
+.al-district-item-number-span-four {
     color: #6B21A8 !important;
+}
+
+.al-district-item-number-span-five {
+    color: #1F2937 !important;
 }
 
 

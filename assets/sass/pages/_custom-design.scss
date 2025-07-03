@@ -1,0 +1,17 @@
+/****** Custom Design Page *********/
+
+/****** Hero Single Section Start *********/
+.al-hero-single-content {
+    background-color: var(--secondary-color);
+    padding: 64px 0;
+}
+
+.al-hero-single-thumb {
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-width: 500px;
+    img {
+        border-radius: 8px;
+    }
+}
+
+/****** Hero Single Section End *********/
