@@ -684,6 +684,23 @@ h6 {
   .al-hero-single-thumb img {
     border-radius: 8px; }
 
+.al-hero-single-title {
+  color: var(--white-color);
+  max-width: 590px;
+  line-height: 48px; }
+  @media (max-width: 991.98px) {
+    .al-hero-single-title {
+      font-size: 65px;
+      line-height: 65px; } }
+  @media (max-width: 767.98px) {
+    .al-hero-single-title {
+      font-size: 53px;
+      line-height: 53px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-single-title {
+      font-size: 31px;
+      line-height: 32px; } }
+
 /****** Hero Single Section End *********/
 /****** Yiwu Market Page *********/
 /****** Hero Yiwu Section Start *********/

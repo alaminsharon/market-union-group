@@ -14,4 +14,24 @@
     }
 }
 
+.al-hero-single-title {
+    color: var(--white-color);
+    max-width: 590px;
+    line-height: 48px;
+
+    @include screen-992 {
+        font-size: 65px;
+        line-height: 65px;
+    }
+
+    @include screen-768 {
+        font-size: 53px;
+        line-height: 53px;
+    }
+
+    @include portrait-phone {
+        font-size: 31px;
+        line-height: 32px;
+    }
+}
 /****** Hero Single Section End *********/
