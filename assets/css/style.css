@@ -803,7 +803,259 @@ h6 {
 
 /****** Agent Section End *********/
 /****** About Section Start *********/
+.al-about-content {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FDF2F8), to(#FFFFFF));
+  background: -webkit-linear-gradient(top, #FDF2F8 0%, #FFFFFF 100%);
+  background: -o-linear-gradient(top, #FDF2F8 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #FDF2F8 0%, #FFFFFF 100%);
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-about-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-about-content {
+      padding: 40px 10px; } }
+
+.al-about-span {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  background: #FCE4EC;
+  border: 1px solid #F48FB1;
+  border-radius: 9999px;
+  padding: 3px 11px; }
+
+.al-about-title {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 16px;
+  line-height: 40px; }
+  @media (max-width: 575.98px) {
+    .al-about-title {
+      font-size: 20px;
+      line-height: 30px; } }
+
+.al-about-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 850px;
+  margin: 0 auto;
+  margin-top: 24px;
+  margin-bottom: 64px; }
+  @media (max-width: 767.98px) {
+    .al-about-subtitle {
+      font-size: 18px;
+      line-height: 24xpx;
+      margin-top: 10px;
+      margin-bottom: 15px; } }
+  @media (max-width: 575.98px) {
+    .al-about-subtitle {
+      font-size: 16px;
+      line-height: 22px; } }
+
+.al-counter-item {
+  text-align: center; }
+  .al-counter-item h3 {
+    color: var(--secondary-color);
+    line-height: 40px;
+    margin-bottom: 8px; }
+  .al-counter-item p {
+    line-height: 24px; }
+
+.al-about-card {
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 32px; }
+  @media (max-width: 575.98px) {
+    .al-about-card {
+      padding: 15px; } }
+
+.al-about-card-title {
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 24px; }
+
+.al-about-item-thumb {
+  width: 64px;
+  height: 64px;
+  background-color: #FCE7F3;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.al-about-item-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-align: center; }
+
+.al-about-item-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto; }
+
 /****** About Section End *********/
+/****** District Section Start *********/
+.al-district-section {
+  background-color: var(--white-color);
+  padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-district-section {
+      padding: 50px 0px; } }
+  @media (max-width: 575.98px) {
+    .al-district-section {
+      padding: 40px 0px; } }
+
+.al-district-span {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  background: #FCE4EC;
+  border: 1px solid #F48FB1;
+  border-radius: 9999px;
+  padding: 3px 11px; }
+
+.al-district-title {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 16px;
+  line-height: 40px; }
+  @media (max-width: 575.98px) {
+    .al-district-title {
+      font-size: 23px;
+      line-height: 30px; } }
+
+.al-district-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  max-width: 760px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+  @media (max-width: 767.98px) {
+    .al-district-subtitle {
+      font-size: 18px;
+      line-height: 24xpx;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
+  @media (max-width: 575.98px) {
+    .al-district-subtitle {
+      font-size: 16px;
+      line-height: 22px; } }
+
+.al-district-content {
+  background: -webkit-gradient(linear, left top, right top, from(#FDF2F8), to(#FFFFFF));
+  background: -webkit-linear-gradient(left, #FDF2F8 0%, #FFFFFF 100%);
+  background: -o-linear-gradient(left, #FDF2F8 0%, #FFFFFF 100%);
+  background: linear-gradient(90deg, #FDF2F8 0%, #FFFFFF 100%);
+  -webkit-box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 32px; }
+
+.al-district-card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px; }
+
+.al-disctrict-card-number {
+  width: 64px;
+  height: 64px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .al-disctrict-card-number span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--white-color); }
+
+.al-district-card-content h4 {
+  line-height: 36px;
+  color: #831843; }
+
+.al-district-card-content span {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px; }
+
+.al-district-card-content p {
+  line-height: 24px; }
+
+.al-district-item {
+  background: var(--white-color);
+  border-radius: 8px;
+  border-left: 4px solid #FACC15;
+  padding: 16px;
+  margin-bottom: 16px; }
+
+.al-integration-item:last-child {
+  margin-bottom: 0; }
+
+.al-district-item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 12px; }
+
+.al-district-item-number {
+  width: 34px;
+  height: 28px;
+  background-color: #FEF9C3;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .al-district-item-number span {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #854D0E; }
+
+.al-district-item-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600; }
+
+.al-district-item-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 8px; }
+
+/****** District Section End *********/
 /****** Challenge Section Start *********/
 .al-challenge-content {
   background: -webkit-gradient(linear, left top, left bottom, from(#FDF2F8), to(#FFFFFF));
@@ -1135,7 +1387,7 @@ h6 {
   justify-content: center; }
 
 .al-complete-card-title {
-  color: var(--secondary-color);
+  color: #831843;
   font-weight: 600;
   line-height: 24px;
   margin-top: 22px;
