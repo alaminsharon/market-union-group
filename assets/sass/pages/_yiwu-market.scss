@@ -336,11 +336,17 @@
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
     border-radius: 16px;
     padding: 32px;
+    margin-bottom: 16px;
+}
+
+.al-district-content:last-child {
+    margin-bottom: 0;
 }
 
 .al-district-card-top {
     display: flex;
     gap: 16px;
+    margin-bottom: 24px;
 }
 
 .al-disctrict-card-number {
@@ -360,19 +366,51 @@
     }
 }
 
+.al-disctrict-card-number-one {
+    background-color: #3B82F6;
+}
+
+.al-disctrict-card-number-two {
+    background-color: #22C55E;
+}
+
+.al-disctrict-card-number-three {
+    background-color: #A855F7;
+}
+
+.al-district-card-content-title {
+    line-height: 36px;
+    color: #831843;
+}
+
+.al-district-card-content-title-one {
+    color: #1E3A8A;
+}
+
+.al-district-card-content-title-two {
+    color: #065F46;
+}
+
+.al-district-card-content-title-three {
+    color: #581C87;
+}
+
+.al-district-card-content-subtitle {
+    color: var(--secondary-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.al-district-card-content-subtitle-one {
+    color: #2563EB;
+}
+
+.al-district-card-content-subtitle-three {
+    color: #A855F7;
+}
+
 .al-district-card-content {
-    h4 {
-        line-height: 36px;
-        color: #831843;
-    }
-
-    span {
-        color: var(--secondary-color);
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-    }
-
     p {
         line-height: 24px;
     }
@@ -384,6 +422,34 @@
     border-left: 4px solid #FACC15;
     padding: 16px;
     margin-bottom: 16px;
+}
+
+.al-district-item-one {
+    border-left: 4px solid #4ADE80;
+}
+
+.al-district-item-two {
+    border-left: 4px solid #60A5FA;
+}
+
+.al-district-item-three {
+    border-left: 4px solid #F472B6;
+}
+
+.al-district-item-four {
+    border-left: 4px solid #C084FC;
+}
+
+.al-district-item-five {
+    border-left: 4px solid #818CF8;
+}
+
+.al-district-item-six {
+    border-left: 4px solid #FB923C;
+}
+
+.al-district-item-seven {
+    border-left: 4px solid #22D3EE;
 }
 
 .al-integration-item:last-child {
@@ -410,6 +476,40 @@
         line-height: 20px;
         color: #854D0E;
     }
+}
+
+.al-district-item-number-span-one {
+    color: #166534 !important;
+}
+
+.al-district-item-number-span-two {
+    color: #1E40AF !important;
+}
+
+.al-district-item-number-span-three {
+    color: #9D174D !important;
+}
+
+.al-district-item-number-span-three {
+    color: #6B21A8 !important;
+}
+
+
+
+.al-district-item-number-one {
+    background-color: #DCFCE7;
+}
+
+.al-district-item-number-two {
+    background-color: #FCE7F3;
+}
+
+.al-district-item-number-three {
+    background-color: #E9D5FF;
+}
+
+.al-district-item-number-four {
+    background-color: #CFFAFE;
 }
 
 .al-district-item-title {
