@@ -769,6 +769,12 @@ h6 {
 /****** Agent Section Start *********/
 .al-agent-section {
   padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-agent-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-agent-section {
+      padding: 40px 0; } }
 
 .al-agent-card-thumb {
   width: 64px;
@@ -800,6 +806,12 @@ h6 {
 .al-help-content {
   background-color: var(--common-bg);
   padding: 80px 0; }
+  @media (max-width: 767.98px) {
+    .al-help-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-help-content {
+      padding: 40px 10px; } }
 
 .al-help-span {
   font-size: 12px;
@@ -814,8 +826,8 @@ h6 {
 .al-help-title {
   max-width: 1300px;
   margin: 0 auto;
-  margin-top: 24px;
-  line-height: 60px; }
+  margin-top: 16px;
+  line-height: 40px; }
   @media (max-width: 991.98px) {
     .al-help-title {
       font-size: 45px;
@@ -835,7 +847,7 @@ h6 {
   max-width: 830px;
   margin: 0 auto;
   margin-top: 24px;
-  margin-bottom: 32px; }
+  margin-bottom: 64px; }
   @media (max-width: 767.98px) {
     .al-help-subtitle {
       font-size: 18px;
@@ -846,6 +858,85 @@ h6 {
     .al-help-subtitle {
       font-size: 16px;
       line-height: 22px; } }
+
+.al-help-card {
+  background: var(--white-color);
+  border: 1px solid #E5E7EB;
+  -webkit-box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 33px 41px 33px 33px;
+  min-height: 360px; }
+
+.al-help-card-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px; }
+
+.al-help-card-number {
+  width: 48px;
+  height: 48px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .al-help-card-number span {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--white-color); }
+
+.al-help-card-title h6 {
+  line-height: 28px;
+  margin-bottom: 8px; }
+
+.al-help-card-title hr {
+  width: 48px;
+  height: 4px;
+  opacity: 1;
+  background: #E5E7EB; }
+
+.al-help-card-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #F3F4F6;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 22px;
+  margin-bottom: 22px; }
+
+.al-help-card-subtitle {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 16px; }
+
+.al-help-card-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px; }
+  .al-help-card-bottom span {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #6B7280; }
 
 /****** Help Section End *********/
 /****** Guangzhou Market Page *********/

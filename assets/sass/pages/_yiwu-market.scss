@@ -119,6 +119,14 @@
 /****** Agent Section Start *********/
 .al-agent-section {
     padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 0;
+    }
+
+    @include portrait-phone {
+        padding: 40px 0;
+    }
 }
 
 .al-agent-card-thumb {
@@ -149,6 +157,14 @@
 .al-help-content {
     background-color: var(--common-bg);
     padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
 }
 
 .al-help-span {
@@ -165,8 +181,8 @@
 .al-help-title {
     max-width: 1300px;
     margin: 0 auto;
-    margin-top: 24px;
-    line-height: 60px;
+    margin-top: 16px;
+    line-height: 40px;
 
     @include screen-992 {
         font-size: 45px;
@@ -190,7 +206,7 @@
     max-width: 830px;
     margin: 0 auto;
     margin-top: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     @include screen-768 {
         font-size: 18px;
@@ -205,5 +221,81 @@
     }
 
 }
+
+.al-help-card {
+    background: var(--white-color);
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 33px 41px 33px 33px;
+    min-height: 360px;
+}
+
+.al-help-card-top {
+    display: flex;
+    gap: 16px;
+}
+
+.al-help-card-number {
+    width: 48px;
+    height: 48px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        color: var(--white-color);
+    }
+}
+
+.al-help-card-title {
+    h6 {
+        line-height: 28px;
+        margin-bottom: 8px;
+    }
+
+    hr {
+        width: 48px;
+        height: 4px;
+        opacity: 1;
+        background: #E5E7EB;
+    }
+}
+
+.al-help-card-icon {
+    width: 64px;
+    height: 64px;
+    background-color: #F3F4F6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+.al-help-card-subtitle {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 16px;
+}
+
+.al-help-card-bottom {
+    display: flex;
+    gap: 8px;
+    span {
+       font-size: 12px;
+       font-weight: 400;
+       line-height: 16px;
+       color: #6B7280; 
+    }
+}
+
 
 /****** Help Section End *********/
