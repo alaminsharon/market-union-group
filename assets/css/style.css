@@ -1,11 +1,3 @@
-/*
-Theme Name:  - Business PSD Template
-Author: 
-Author URI: https://themeforest.net/user/SparkRaxx
-Tags: slass, business, corporate, consulting etc
-Description: Slass - Business PSD Template
-Version: 1.0.0
-*/
 /********* base file **********/
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
@@ -21,6 +13,11 @@ Version: 1.0.0
 
 img {
   max-width: 100%; }
+
+.container-900 {
+  max-width: 924px;
+  margin: auto;
+  padding: 0 12px; }
 
 .container-1150 {
   max-width: 1174px;
@@ -676,32 +673,503 @@ h6 {
 .al-hero-single-content {
   background-color: var(--secondary-color);
   padding: 64px 0; }
-
-.al-hero-single-thumb {
-  -webkit-box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
-  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
-  max-width: 500px; }
-  .al-hero-single-thumb img {
-    border-radius: 8px; }
+  @media (max-width: 767.98px) {
+    .al-hero-single-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-hero-single-content {
+      padding: 40px 10px; } }
 
 .al-hero-single-title {
   color: var(--white-color);
   max-width: 590px;
   line-height: 48px; }
+  @media (max-width: 1199.98px) {
+    .al-hero-single-title {
+      font-size: 40px;
+      line-height: 40px; } }
   @media (max-width: 991.98px) {
     .al-hero-single-title {
-      font-size: 65px;
-      line-height: 65px; } }
-  @media (max-width: 767.98px) {
-    .al-hero-single-title {
-      font-size: 53px;
-      line-height: 53px; } }
+      font-size: 32px;
+      line-height: 35px; } }
   @media (max-width: 575.98px) {
     .al-hero-single-title {
-      font-size: 31px;
-      line-height: 32px; } }
+      font-size: 28px;
+      line-height: 30px; } }
+
+.al-hero-single-subtitle {
+  color: var(--white-color);
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 16px;
+  margin-bottom: 24px; }
+  @media (max-width: 575.98px) {
+    .al-hero-single-subtitle {
+      font-size: 16px; } }
+
+.al-hero-single-btn {
+  padding: 10px 29px;
+  background: var(--white-color);
+  color: var(--secondary-color);
+  border-radius: 6px;
+  display: inline-block; }
+  .al-hero-single-btn i {
+    color: var(--secondary-color);
+    padding-left: 16px; }
+  @media (max-width: 575.98px) {
+    .al-hero-single-btn {
+      padding: 10px 15px; } }
+
+.al-hero-single-thumb {
+  -webkit-box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+  max-width: 500px; }
+  @media (max-width: 767.98px) {
+    .al-hero-single-thumb {
+      max-width: 100%; } }
+  .al-hero-single-thumb img {
+    border-radius: 8px; }
+
+.al-solution-custom-title {
+  color: var(--white-color);
+  max-width: 1400px;
+  margin: 0 auto;
+  line-height: 36px; }
+  @media (max-width: 767.98px) {
+    .al-solution-custom-title {
+      font-size: 25px;
+      line-height: 30px; } }
+  @media (max-width: 575.98px) {
+    .al-solution-custom-title {
+      font-size: 20px;
+      line-height: 25px; } }
+
+.al-solution-custom-subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--white-color);
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 32px; }
+  @media (max-width: 575.98px) {
+    .al-solution-custom-subtitle {
+      margin-top: 10px;
+      margin-bottom: 15px; } }
 
 /****** Hero Single Section End *********/
+/****** Process Section Start *********/
+.al-process-content {
+  background-color: var(--common-bg);
+  padding: 64px 0; }
+  @media (max-width: 767.98px) {
+    .al-process-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-process-content {
+      padding: 40px 10px; } }
+
+.al-process-title {
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 36px; }
+  @media (max-width: 575.98px) {
+    .al-process-title {
+      font-size: 19px;
+      margin-bottom: 20px;
+      line-height: 24px; } }
+
+.al-process-card {
+  background: var(--white-color);
+  border: 2px solid #FCE7F3;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 26px;
+  min-height: 230px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-process-card:hover {
+    border-color: #E4E4E7; }
+    .al-process-card:hover .al-process-card-arrow {
+      border-color: #E4E4E7; }
+  @media (max-width: 1399.98px) {
+    .al-process-card {
+      min-height: 270px; } }
+  @media (max-width: 575.98px) {
+    .al-process-card {
+      min-height: 230px; } }
+
+.al-process-card-arrow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: var(--white-color);
+  border: 2px solid #FBCFE8;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 9999px;
+  right: -11px;
+  top: 46%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-process-card-arrow i {
+    font-size: 18px;
+    color: var(--secondary-color); }
+
+.al-process-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 14px;
+  margin-bottom: 7px; }
+
+.al-process-card-subtitle {
+  font-size: 12px;
+  line-height: 20px;
+  text-align: start; }
+
+/****** Process Section End *********/
+/****** Competitor Section Start *********/
+.al-competitor-section {
+  padding: 64px 0; }
+  @media (max-width: 767.98px) {
+    .al-competitor-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-competitor-section {
+      padding: 40px 0; } }
+
+.al-competitor-title {
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 36px; }
+  @media (max-width: 575.98px) {
+    .al-competitor-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: 24px; } }
+
+.al-competitor-card img {
+  width: 100%;
+  border-radius: 8px 8px 0 0; }
+
+.al-competitor-card-content {
+  border: 1px solid #E4E4E7;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 8px 8px;
+  background-color: var(--white-color);
+  min-height: 230px;
+  padding: 24px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-competitor-card-content:hover {
+    border-color: #FBCFE8; }
+  @media (max-width: 1399.98px) {
+    .al-competitor-card-content {
+      min-height: 270px; } }
+  @media (max-width: 767.98px) {
+    .al-competitor-card-content {
+      min-height: 230px; } }
+
+.al-competitor-card-title {
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--secondary-color);
+  margin-bottom: 12px; }
+
+.al-competitor-card-subtitle {
+  font-size: 14px;
+  line-height: 23px; }
+
+/****** Competitor Section End *********/
+/****** Affordable Section Start *********/
+.al-affordable-section {
+  padding: 64px 0; }
+  @media (max-width: 767.98px) {
+    .al-affordable-section {
+      padding: 50px 0; } }
+  @media (max-width: 575.98px) {
+    .al-affordable-section {
+      padding: 40px 0; } }
+
+.al-affordable-title {
+  text-align: center;
+  margin-bottom: 48px;
+  line-height: 36px; }
+  @media (max-width: 575.98px) {
+    .al-affordable-title {
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: 24px; } }
+
+.al-affordable-btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media (max-width: 1199.98px) {
+    .al-affordable-btn-group {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+
+.al-affordable-btn {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 16px 90px;
+  background-color: #FDF2F8;
+  color: var(--secondary-color);
+  border-radius: 8px; }
+  @media (max-width: 1460px) {
+    .al-affordable-btn {
+      padding: 16px 50px; } }
+  @media (max-width: 575.98px) {
+    .al-affordable-btn {
+      padding: 16px 20px;
+      font-size: 13px; } }
+
+.al-affordable-content-title {
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 32px;
+  line-height: 24px; }
+
+.al-affordable-card-thumb {
+  margin-bottom: 48px; }
+  @media (max-width: 575.98px) {
+    .al-affordable-card-thumb {
+      margin-bottom: 20px; } }
+  .al-affordable-card-thumb img {
+    width: 100%; }
+
+.al-affordable-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 30px; }
+  @media (max-width: 575.98px) {
+    .al-affordable-card-content {
+      display: block; } }
+
+.al-affordable-item h6 {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  color: var(--secondary-color); }
+
+.al-affordable-item p {
+  font-size: 14px;
+  line-height: 20px; }
+
+@media (max-width: 575.98px) {
+  .al-affordable-item {
+    margin-bottom: 12px; } }
+
+@media (max-width: 575.98px) {
+  .al-affordable-item:last-child {
+    margin-bottom: 0; } }
+
+/****** Affordable Section End *********/
+/****** Form Single Section Start *********/
+.al-form-single-content {
+  background-color: var(--common-bg);
+  padding: 64px 0; }
+  @media (max-width: 767.98px) {
+    .al-form-single-content {
+      padding: 50px 10px; } }
+  @media (max-width: 575.98px) {
+    .al-form-single-content {
+      padding: 40px 10px; } }
+
+.al-form-single-title {
+  line-height: 36px;
+  text-align: center; }
+  @media (max-width: 575.98px) {
+    .al-form-single-title {
+      font-size: 24px; } }
+
+.al-form-single-subtitle {
+  font-size: 18px;
+  line-height: 28px;
+  max-width: 760px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+  @media (max-width: 575.98px) {
+    .al-form-single-subtitle {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px; } }
+
+.al-form-single-card {
+  background: var(--white-color);
+  border: 1px solid #E4E4E7;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 65px 33px 33px 33px; }
+  @media (max-width: 575.98px) {
+    .al-form-single-card {
+      padding: 20px; } }
+
+.al-form-single-label {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--primary-color); }
+
+.al-form-single-input {
+  font-size: 16px;
+  font-weight: 400;
+  color: #9CA3AF;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #E5E7EB;
+  background-color: transparent;
+  width: 100%; }
+
+.al-form-single-select {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--primary-color);
+  background-color: transparent;
+  border-bottom: 1px solid #E5E7EB;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+  .al-form-single-select option {
+    border: none;
+    outline: none; }
+
+.form-select:focus {
+  border-color: #D1D1D1;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+/****** Form Single Section End *********/
+/****** Brand Page *********/
+/****** Source Section Start *********/
+.al-source-content {
+  background-color: var(--common-bg);
+  padding: 64px 0; }
+
+.al-source-title {
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 64px; }
+
+.al-source-card {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  position: relative; }
+
+.al-source-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  min-height: 1775px;
+  background: #FCE7F3;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 1; }
+
+.al-source-item {
+  width: 45%;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 60px;
+  z-index: 2;
+  background: #FDF2F8;
+  border: 2px solid #FCE7F3;
+  -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px; }
+
+.al-source-item.left {
+  float: left;
+  clear: both;
+  margin-right: 55%; }
+
+.al-source-item.right {
+  float: right;
+  clear: both;
+  margin-left: 55%; }
+
+.al-source-icon {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: -164px; }
+
+.al-source-icon .circle {
+  display: inline-block;
+  background: #fff0f5;
+  border: 2px solid #fca4c6;
+  color: #f06292;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 36px;
+  text-align: center;
+  z-index: 3;
+  position: relative; }
+
+.al-source-item h6 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 28px; }
+
+.al-source-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 22px; }
+
+@media screen and (max-width: 768px) {
+  .al-source-item,
+  .al-source-item.left,
+  .al-source-item.right {
+    width: 100%;
+    margin: 20px 0;
+    float: none; }
+  .al-source-card::before {
+    left: 20px; }
+  .al-source-icon .circle {
+    margin-left: -10px; } }
+
+/****** Source Section End *********/
 /****** Yiwu Market Page *********/
 /****** Hero Yiwu Section Start *********/
 .al-hero-content-yiwu {

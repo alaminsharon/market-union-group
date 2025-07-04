@@ -1,0 +1,112 @@
+/****** Brand Page *********/
+
+/****** Source Section Start *********/
+.al-source-content {
+    background-color: var(--common-bg);
+    padding: 64px 0;
+}
+
+.al-source-title {
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.al-source-card {
+    width: 90%;
+    max-width: 1000px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.al-source-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    min-height: 1775px;
+    background: #FCE7F3;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.al-source-item {
+    width: 45%;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 60px;
+    z-index: 2;
+    background: #FDF2F8;
+    border: 2px solid #FCE7F3;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+.al-source-item.left {
+    float: left;
+    clear: both;
+    margin-right: 55%;
+}
+
+.al-source-item.right {
+    float: right;
+    clear: both;
+    margin-left: 55%;
+}
+
+.al-source-icon {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -164px;
+}
+
+.al-source-icon .circle {
+    display: inline-block;
+    background: #fff0f5;
+    border: 2px solid #fca4c6;
+    color: #f06292;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+}
+
+.al-source-item h6 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.al-source-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .al-source-item,
+    .al-source-item.left,
+    .al-source-item.right {
+        width: 100%;
+        margin: 20px 0;
+        float: none;
+    }
+
+    .al-source-card::before {
+        left: 20px;
+    }
+
+    .al-source-icon .circle {
+        margin-left: -10px;
+    }
+}
+
+/****** Source Section End *********/

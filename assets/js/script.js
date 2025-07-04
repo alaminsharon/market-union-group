@@ -1,9 +1,15 @@
+
+
 (function ($) {
 
     /*
         1. Header Button
         2. Mobile Menu
     */
+
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        // Your custom options for a specific gallery
+    });
 
     //1. Header Button
 
@@ -24,7 +30,11 @@
         time: 1000,
     });
 
+
+
 })(jQuery)
+
+
 
 
 
