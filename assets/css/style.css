@@ -1497,6 +1497,10 @@ h6 {
     font-weight: 700;
     line-height: 32px;
     color: var(--white-color); }
+  @media (max-width: 575.98px) {
+    .al-disctrict-card-number {
+      width: 50px;
+      height: 50px; } }
 
 .al-disctrict-card-number-one {
   background-color: #3B82F6; }
@@ -1513,6 +1517,9 @@ h6 {
 .al-district-card-content-title {
   line-height: 36px;
   color: #831843; }
+  @media (max-width: 575.98px) {
+    .al-district-card-content-title {
+      font-size: 26px; } }
 
 .al-district-card-content-title-one {
   color: #1E3A8A; }
@@ -1640,6 +1647,9 @@ h6 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 600; }
+  @media (max-width: 575.98px) {
+    .al-district-item-title {
+      font-size: 14px; } }
 
 .al-district-item-subtitle {
   font-size: 14px;

@@ -364,6 +364,10 @@
         line-height: 32px;
         color: var(--white-color);
     }
+    @include portrait-phone {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .al-disctrict-card-number-one {
@@ -385,6 +389,9 @@
 .al-district-card-content-title {
     line-height: 36px;
     color: #831843;
+    @include portrait-phone {
+        font-size: 26px;
+    }
 }
 
 .al-district-card-content-title-one {
@@ -540,6 +547,9 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
+    @include portrait-phone {
+        font-size: 14px;
+    }
 }
 
 .al-district-item-subtitle {
