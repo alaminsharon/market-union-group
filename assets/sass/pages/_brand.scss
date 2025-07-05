@@ -4,12 +4,23 @@
 .al-source-content {
     background-color: var(--common-bg);
     padding: 64px 0 0 0;
+    @include screen-768 {
+        padding: 40px 0 0 0;
+    }
 }
 
 .al-source-title {
     line-height: 36px;
     text-align: center;
     margin-bottom: 64px;
+    @include screen-768 {
+        margin-bottom: 80px;
+    }
+    @include portrait-phone {
+        font-size: 19px;
+        line-height: 25px;
+        margin-bottom: 70px;
+    }
 }
 
 .al-source-card {
@@ -29,7 +40,9 @@
     background: #FCE7F3;
     transform: translateX(-50%);
     z-index: 1;
-    @include
+    @include screen-992 {
+        display: none;
+    }
 }
 
 .al-source-item {
@@ -46,6 +59,13 @@
     &:hover {
         border-color: #E4E4E7;
     }
+    @include screen-992 {
+        width: 100%;
+        padding: 60px 20px 20px 20px;
+    }
+    @include portrait-phone {
+        padding: 40px 10px 10px 10px;
+    }
 }
 
 .al-source-card:last-child .al-source-item {
@@ -56,12 +76,18 @@
     float: left;
     clear: both;
     margin-right: 55%;
+    @include screen-992 {
+        margin-right: 0;
+    }
 }
 
 .al-source-item.right {
     float: right;
     clear: both;
     margin-left: 55%;
+    @include screen-992 {
+        margin-left: 0;
+    }
 }
 
 .al-source-icon {
@@ -69,6 +95,19 @@
     width: 100%;
     text-align: center;
     top: -100px;
+    @include screen-992 {
+        top: -200px;
+        left: 0%;
+    }
+    @include screen-768 {
+        top: -220px;
+    }
+    @include portrait-phone {
+        top: -200px;
+    }
+    @include screen-460 {
+        top: -240px;
+    }
 }
 
 .al-source-icon .circle {
@@ -89,6 +128,9 @@
         margin: 0 0 10px;
         font-size: 18px;
         line-height: 28px;
+        @include portrait-phone {
+            font-size: 15px;
+        }
     }
 
     p {
@@ -98,24 +140,5 @@
     }
 }
 
-
-@media screen and (max-width: 768px) {
-
-    .al-source-item,
-    .al-source-item.left,
-    .al-source-item.right {
-        width: 100%;
-        margin: 20px 0;
-        float: none;
-    }
-
-    .al-source-card::before {
-        left: 20px;
-    }
-
-    .al-source-icon .circle {
-        margin-left: -10px;
-    }
-}
 
 /****** Source Section End *********/
