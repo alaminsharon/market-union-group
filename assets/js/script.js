@@ -11,19 +11,17 @@
         // Your custom options for a specific gallery
     });
 
-    //1. Header Button
-
-    $(".header_toggle_btn").on("click", function () {
-        $(".mobile-menu").toggleClass("active");
+    $(".offcanvas_right").click(function () {
+        $(".offcanvas-menu-click").animate({
+            right: "0px",
+        });
     });
 
-
-    //2. Mobile Menu
-
-    $(".mobile-menu .close").on("click", function () {
-        $(".mobile-menu").removeClass("active");
+    $(".offcanvas-menu-close").click(function () {
+        $(".offcanvas-menu-click").animate({
+            right: "-500px",
+        });
     });
-
     //3. Counter
     $('.counter').counterUp({
         delay: 10,
