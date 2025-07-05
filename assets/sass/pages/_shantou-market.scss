@@ -71,10 +71,24 @@
     color: var(--secondary-color);
     border-radius: 6px;
     display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+        i {
+            color: var(--white-color);
+            transform: translateX(6px);
+        }
+    }
 
     i {
         color: var(--secondary-color);
         padding-left: 16px;
+        transition: transform 0.3s ease;
     }
 
     @include portrait-phone {
@@ -276,6 +290,7 @@
 .al-local-item-title {
     line-height: 28px;
     font-weight: 600;
+
     @include screen-992 {
         font-size: 18px;
     }
@@ -285,6 +300,7 @@
     line-height: 26px;
     margin-top: 16px;
 }
+
 /****** Local Section End *********/
 
 /****** WCS Section Start *********/

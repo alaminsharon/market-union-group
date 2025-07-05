@@ -64,10 +64,21 @@
     border-radius: 9999px;
     display: inline-block;
     margin-top: 24px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: var(--primary-color);
+        transform: translateY(-2px);
+
+        i {
+            transform: translateX(6px);
+        }
+    }
 
     i {
         color: var(--white-color);
         padding-left: 16px;
+        transition: transform 0.3s ease;
     }
 }
 
@@ -76,6 +87,7 @@
 /****** Product Section Start *********/
 .al-product-content-top {
     padding: 64px 0;
+
     @include portrait-phone {
         padding: 40px 0;
     }
@@ -85,6 +97,7 @@
     text-align: center;
     line-height: 36px;
     margin-bottom: 48px;
+
     @include portrait-phone {
         font-size: 24px;
         margin-bottom: 20px;
@@ -93,6 +106,7 @@
 
 .al-product-card-thumb {
     border-radius: 8px 8px 0 0;
+
     @include screen-992 {
         width: 100%;
     }
@@ -108,6 +122,7 @@
 .al-product-card-title {
     line-height: 28px;
     font-weight: 600;
+
     @include screen-768 {
         font-size: 18px;
     }
@@ -116,6 +131,7 @@
 .al-product-content-bottom {
     background: var(--common-bg);
     padding: 64px 0;
+
     @include portrait-phone {
         padding: 40px 10px;
     }
@@ -206,6 +222,10 @@
     font-size: 14px;
     line-height: 20px;
     display: inline-block;
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+    }
 
     img {
         margin-right: 12px;
@@ -221,6 +241,11 @@
     font-size: 14px;
     line-height: 20px;
     display: inline-block;
+    transition: 0.3s;
+    &:hover {
+        background-color: var(--primary-color);
+        border-color: var(--primary-color);
+    }
 
     i {
         margin-left: 16px;

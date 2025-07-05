@@ -53,6 +53,11 @@
     color: var(--secondary-color);
     display: inline-block;
     margin-top: 24px;
+    transition: 0.3s;
+    &:hover {
+        background: var(--primary-color);
+        color: var(--white-color);
+    }
 }
 
 .al-solution-financial-title {
