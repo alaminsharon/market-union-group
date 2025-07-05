@@ -29,6 +29,11 @@ img {
   margin: auto;
   padding: 0 12px; }
 
+.container-1290 {
+  max-width: 1314px;
+  margin: auto;
+  padding: 0 12px; }
+
 .container-1370 {
   max-width: 1394px;
   margin: auto;
@@ -265,7 +270,54 @@ h6 {
   font-family: var(--primary-font);
   border-radius: 6px; }
 
-/********* Footer *********/
+/********* Footer Page *********/
+/********* Footer Section Start *********/
+.al-footer-section {
+  background-color: var(--secondary-color); }
+
+/*** Footer Top ******/
+.al-footer-top {
+  padding: 80px 0; }
+
+/*** Footer Copyright ******/
+.al-footer-copyright {
+  padding: 30px 0; }
+
+.al-footer-copyright-content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--white-color); }
+  .al-footer-copyright-content a {
+    color: var(--primary-color); }
+  @media (max-width: 767.98px) {
+    .al-footer-copyright-content {
+      text-align: center;
+      margin-bottom: 10px; } }
+
+.al-footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  gap: 36px; }
+  @media (max-width: 767.98px) {
+    .al-footer-nav {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; } }
+  @media (max-width: 460px) {
+    .al-footer-nav {
+      gap: 15px; } }
+  .al-footer-nav li a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--white-color); }
+
+/********* Footer Section End *********/
 /******** pages file **********/
 /****** Home Page *********/
 /****** Hero Section Start *********/
