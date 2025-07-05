@@ -439,6 +439,9 @@
     &:hover {
         background-color: var(--primary-color);
     }
+    @include portrait-phone {
+        padding: 10px 20px;
+    }
 }
 
 /****** Form Section End *********/

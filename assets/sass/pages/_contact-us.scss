@@ -112,10 +112,14 @@
     @include screen-768 {
         font-size: 16px;
         line-height: 26px;
+        margin-top: 15px;
+        margin-bottom: 25px;
     }
 
     @include portrait-phone {
         font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
     }
 }
 
@@ -133,18 +137,29 @@
 /****** Partner Section End *********/
 
 /****** Location Section Start *********/
-.al-location-section {
-    padding: 0 0 120px 0;
-}
 
 .al-location-content {
     background: var(--common-bg);
     padding: 80px 0;
+
+    @include screen-768 {
+        padding: 50px 10px;
+    }
+
+    @include portrait-phone {
+        padding: 40px 10px;
+    }
 }
 
 .al-location-title {
     line-height: 40px;
     margin-bottom: 64px;
+    @include screen-768 {
+        margin-bottom: 40px;
+    }
+    @include portrait-phone {
+        margin-bottom: 30px;
+    }
 }
 
 .location-nav-tabs {
@@ -167,7 +182,9 @@
         padding: 12px 58px;
         border: none !important;
         transition: 0.3s;
+
         @include portrait-phone {
+            padding: 12px 30px;
             font-size: 13px;
         }
 
@@ -220,6 +237,7 @@
 .al-location-tab-card-content-title {
     line-height: 32px;
     color: var(--secondary-color);
+
     @include portrait-phone {
         font-size: 18px;
     }
@@ -239,6 +257,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+
     strong {
         font-weight: 700;
     }
@@ -282,4 +301,5 @@
     font-weight: 400;
     line-height: 24px;
 }
+
 /****** Location Section End *********/

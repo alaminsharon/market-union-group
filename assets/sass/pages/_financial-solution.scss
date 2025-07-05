@@ -82,6 +82,7 @@
     @include portrait-phone {
         font-size: 21px;
         line-height: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -259,6 +260,7 @@
 
     @include portrait-phone {
         font-size: 16px;
+        margin-bottom: 30px;
     }
 }
 
