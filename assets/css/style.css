@@ -681,7 +681,7 @@ h6 {
 /********* Footer Page *********/
 /********* Footer Section Start *********/
 .al-footer-section {
-  background-color: var(--secondary-color); }
+  background-color: var(--primary-color); }
 
 /*** Footer Top ******/
 .al-footer-top-content {
@@ -836,7 +836,7 @@ h6 {
     -o-transition: 0.3s;
     transition: 0.3s; }
     .al-footer-content li a:hover {
-      color: var(--primary-color); }
+      color: var(--secondary-color); }
 
 .al-footer-content li:last-child {
   margin-bottom: 0; }
@@ -916,7 +916,12 @@ h6 {
   line-height: 26px;
   color: var(--white-color); }
   .al-footer-copyright-content a {
-    color: var(--primary-color); }
+    color: var(--white-color);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    .al-footer-copyright-content a:hover {
+      color: var(--secondary-color); }
   @media (max-width: 767.98px) {
     .al-footer-copyright-content {
       text-align: center;

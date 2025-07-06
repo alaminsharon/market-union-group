@@ -2,7 +2,7 @@
 
 /********* Footer Section Start *********/
 .al-footer-section {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
 }
 
 /*** Footer Top ******/
@@ -154,7 +154,7 @@
             transition: 0.3s;
 
             &:hover {
-                color: var(--primary-color);
+                color: var(--secondary-color);
             }
         }
 
@@ -248,7 +248,11 @@
     color: var(--white-color);
 
     a {
-        color: var(--primary-color);
+        color: var(--white-color);
+        transition: 0.3s;
+        &:hover {
+            color: var(--secondary-color);
+        }
     }
 
     @include screen-768 {
