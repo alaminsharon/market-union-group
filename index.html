@@ -19,11 +19,51 @@
 
     <!--Header Section Start-->
     <header>
-
+        <div class="al-header-top">
+            <div class="container-1780">
+                <div class="row g-4">
+                    <div class="col-sm-7 col-12">
+                        <div class="al-header-top-content">
+                            <span class="al-header-top-content-title">Need professional medical & health Care?</span>
+                            <div class="al-header-top-call">
+                                <i class="fa-solid fa-phone-volume"></i>
+                                <span>Call:
+                                    <a href="tel: +1 (234) 5688 9990">+1 (234) 5688 9990</a>
+                                </span>
+                            </div>
+                            <span class="al-header-top-dot"></span>
+                            <div class="al-header-top-email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>Email:
+                                    <a href="mailto:support@gmail.com">support@gmail.com</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 col-12">
+                        <div class="al-header-top-right justify-content-end">
+                            <div class="al-header-top-clock">
+                                <i class="fa-regular fa-clock"></i>
+                                <span>Working Hours :
+                                    <p>Mon-Friday, 08am - 09pm</p>
+                                </span>
+                            </div>
+                            <span class="al-header-top-dot"></span>
+                            <ul class="al-header-top-social">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header-bottom">
             <div class="container-1780">
                 <div class="row g-4 align-items-center">
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 col-md-4 col-6">
                         <div class="al-header-logo">
                             <a href="index.html"><img src="assets/images/header-logo.svg" alt="" class="img-fluid"></a>
                         </div>
@@ -42,7 +82,7 @@
                                     </ul>
                                 </li>
                                 <li class="position-relative">
-                                    <a href="#">Service
+                                    <a href="#">Services
                                         <i class="fa-solid fa-angle-down"></i>
                                     </a>
                                     <ul class="submenu-wrapper">
@@ -112,16 +152,10 @@
                         </div>
                     </div>
                     <div class="col-lg-10 col-md-8 col-6 d-block d-xl-none">
-                        <div class="mobile-toggle d-flex align-items-center gap-2 justify-content-end">
+                        <div class="mobile-toggle d-flex align-items-center gap-3 justify-content-end">
                             <div class="dropdown dropdown_search">
                                 <button class="search-btn" data-bs-toggle="dropdown"><i
                                         class="fa-solid fa-magnifying-glass"></i></button>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <form class="search-form">
-                                        <input type="text" placeholder="Search..." class="theme-input bg-transparent">
-                                        <button type="submit" class="submit-btn">Go</button>
-                                    </form>
-                                </div>
                             </div>
                             <div class="mobile_menu">
                                 <button class="header_toggle_btn bg-transparent border-0" type="button"
@@ -171,7 +205,12 @@
             </ul>
             <div class="offcanvas-content-newsletter mb30">
                 <h5>Newsletter Subscribe</h5>
-                <input type="email" placeholder="Email Address">
+                <form action="#" class="offcanvas-content-form">
+                    <input type="email" placeholder="Email Address">
+                    <button class="offcanvas-content-btn">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
             </div>
             <div class="offcanvas-content-news">
                 <h5>Recent News</h5>
@@ -211,45 +250,41 @@
     <!--Offcanvas Menu End-->
 
     <!--Mobile Menu Start-->
-    <div class="offcanvas offcanvas-start" id="offcanvas-mobile">
+    <div class="offcanvas offcanvas-start offcanvas-mobile-content" id="offcanvas-mobile">
         <div class="offcanvas-body">
             <div class="mobile-menu">
                 <a href="#" class="logo py-3"><img src="assets/images/offcanvus-logo.svg" alt="logo"
                         class="img-fluid"></a>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                <ul>
-                    <li class="position-relative">
-                        <a href="index.html">Home
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
+                <ul class="mobile-nav-menu">
+                    <li class="has-submenu">
+                        <a>Home</a>
+                        <i class="fas fa-angle-down"></i>
                         <ul class="submenu-wrapper">
                             <li><a href="#">Home 1</a></li>
                             <li><a href="#">Home 2</a></li>
                             <li><a href="#">Home 3</a></li>
                         </ul>
                     </li>
-                    <li class="position-relative">
-                        <a href="#">Service
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0)">Services</a>
+                        <i class="fas fa-angle-down"></i>
                         <ul class="submenu-wrapper">
                             <li><a href="#">Our Services</a></li>
                             <li><a href="#">Service Details</a></li>
                         </ul>
                     </li>
-                    <li class="position-relative">
-                        <a href="#">Doctors
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0)">Doctors</a>
+                        <i class="fas fa-angle-down"></i>
                         <ul class="submenu-wrapper">
                             <li><a href="#">Doctor</a></li>
                             <li><a href="#">Doctor Details</a></li>
                         </ul>
                     </li>
-                    <li class="position-relative">
-                        <a href="#">Pages
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0)">Pages</a>
+                        <i class="fas fa-angle-down"></i>
                         <ul class="submenu-wrapper">
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">History</a></li>
@@ -261,18 +296,44 @@
                             <li><a href="#">Sign Up</a></li>
                         </ul>
                     </li>
-                    <li class="position-relative">
-                        <a href="#">Blog
-                            <i class="fa-solid fa-angle-down"></i>
-                        </a>
+                    <li class="has-submenu">
+                        <a href="javascript:void(0)">Blog</a>
+                        <i class="fas fa-angle-down"></i>
                         <ul class="submenu-wrapper">
                             <li><a href="#">Blog Standart</a></li>
                             <li><a href="#">Blog Details</a></li>
                         </ul>
                     </li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+                <h6 class="offcanvas-mobile-title">Contact Info</h6>
+                <ul class="offcanvas-mobile-menu mt20 mb10">
                     <li>
-                        <a href="contact-us.html">Contact</a>
+                        <p><i class="fa-solid fa-location-dot"></i>
+                            <a href="#">
+                                70 Washington Square South, New York, NY 10012, United States
+                            </a>
+                        </p>
                     </li>
+                    <li>
+                        <p><i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:example@gmail.com">
+                                example@gmail.com
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p> <i class="fa-solid fa-phone-flip"></i>
+                            <a href="tel:+00012345688">
+                                +000 (123) 456 88</a>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="offcanvas-mobile-social">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>

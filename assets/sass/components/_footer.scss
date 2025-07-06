@@ -11,7 +11,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
-    border-bottom: 1px solid var(--white-color);
+    border-bottom: 1px solid #FFFFFF1A;
     @include screen-768 {
         padding: 30px 0;
         display: block;
@@ -84,7 +84,7 @@
 /*** Footer Middle ******/
 .al-footer-middle {
     padding: 60px 0;
-    border-bottom: 1px solid var(--white-color);
+    border-bottom: 1px solid #FFFFFF1A;
 }
 
 .al-footer-subtitle {
