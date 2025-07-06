@@ -201,10 +201,14 @@
                 min-width: 220px;
                 display: block;
                 background: var(--white-color);
+                border-radius: 6px;
+                border: 1px solid var(--paragraph-color);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
                 z-index: -1;
                 opacity: 0;
                 visibility: hidden;
                 text-align: start !important;
+                transition: 0.3s;
 
                 li {
                     a {

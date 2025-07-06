@@ -40,15 +40,6 @@
             line-height: 35px;
         }
     }
-    @include screen-768 {
-        text-align: center;
-    }
-}
-
-.al-footer-top-btn-item {
-    @include screen-768 {
-        text-align: center;
-    }
 }
 
 .al-footer-top-btn {
@@ -67,13 +58,11 @@
     }
 
     &:hover {
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
         color: var(--white-color);
-        transform: translateY(-2px);
-        border-color: var(--primary-color);
+        border-color: var(--secondary-color);
 
         i {
-            transform: translateX(6px);
             color: var(--white-color);
         }
     }
@@ -81,7 +70,7 @@
     i {
         color: var(--white-color);
         padding-left: 10px;
-        transition: transform 0.3s ease;
+        transition: 0.3s;
     }
 }
 /*** Footer Middle ******/
@@ -214,12 +203,10 @@
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: var(--primary-color);
+        background-color: var(--secondary-color);
         color: var(--white-color);
-        transform: translateY(-2px);
 
         i {
-            transform: translateX(6px);
             color: var(--white-color);
         }
     }
@@ -227,7 +214,7 @@
     i {
         color: var(--secondary-color);
         padding-left: 10px;
-        transition: transform 0.3s ease;
+        transition: 0.3s;
     }
 }
 
@@ -283,7 +270,7 @@
             transition: 0.3s;
 
             &:hover {
-                color: var(--primary-color);
+                color: var(--secondary-color);
             }
         }
     }

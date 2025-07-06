@@ -366,10 +366,17 @@ h6 {
       min-width: 220px;
       display: block;
       background: var(--white-color);
+      border-radius: 6px;
+      border: 1px solid var(--paragraph-color);
+      -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       z-index: -1;
       opacity: 0;
       visibility: hidden;
-      text-align: start !important; }
+      text-align: start !important;
+      -webkit-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s; }
       .al-header-nav ul li .submenu-wrapper li {
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
@@ -721,14 +728,6 @@ h6 {
       font-size: 30px;
       line-height: 35px; } }
 
-@media (max-width: 767.98px) {
-  .al-footer-top-content-title {
-    text-align: center; } }
-
-@media (max-width: 767.98px) {
-  .al-footer-top-btn-item {
-    text-align: center; } }
-
 .al-footer-top-btn {
   background-color: transparent;
   color: var(--white-color);
@@ -746,25 +745,17 @@ h6 {
     .al-footer-top-btn {
       padding: 10px 35px; } }
   .al-footer-top-btn:hover {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     color: var(--white-color);
-    -webkit-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
-    transform: translateY(-2px);
-    border-color: var(--primary-color); }
+    border-color: var(--secondary-color); }
     .al-footer-top-btn:hover i {
-      -webkit-transform: translateX(6px);
-      -ms-transform: translateX(6px);
-      transform: translateX(6px);
       color: var(--white-color); }
   .al-footer-top-btn i {
     color: var(--white-color);
     padding-left: 10px;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    -o-transition: transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 /*** Footer Middle ******/
 .al-footer-middle {
@@ -884,24 +875,16 @@ h6 {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
   .al-footer-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    -webkit-transform: translateY(-2px);
-    -ms-transform: translateY(-2px);
-    transform: translateY(-2px); }
+    background-color: var(--secondary-color);
+    color: var(--white-color); }
     .al-footer-btn:hover i {
-      -webkit-transform: translateX(6px);
-      -ms-transform: translateX(6px);
-      transform: translateX(6px);
       color: var(--white-color); }
   .al-footer-btn i {
     color: var(--secondary-color);
     padding-left: 10px;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    -o-transition: transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 /*** Footer Copyright ******/
 .al-footer-copyright {
@@ -952,7 +935,7 @@ h6 {
     -o-transition: 0.3s;
     transition: 0.3s; }
     .al-footer-nav li a:hover {
-      color: var(--primary-color); }
+      color: var(--secondary-color); }
 
 /********* Footer Section End *********/
 /******** pages file **********/
