@@ -62,6 +62,9 @@
     border-radius: 9999px;
     display: inline-block;
     transition: all 0.3s ease;
+    @include portrait-phone {
+        padding: 10px 35px;
+    }
 
     &:hover {
         background-color: var(--primary-color);
@@ -85,6 +88,9 @@
 .al-footer-middle {
     padding: 60px 0;
     border-bottom: 1px solid #FFFFFF1A;
+    @include screen-768 {
+        padding: 30px 0;
+    }
 }
 
 .al-footer-subtitle {
@@ -94,6 +100,10 @@
     color: var(--white-color);
     margin-top: 32px;
     margin-bottom: 32px;
+    @include screen-768 {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 .al-footer-social-title {
@@ -226,6 +236,9 @@
 
 .al-footer-copyright {
     padding: 30px 0;
+    @include portrait-phone {
+        padding: 20px 0;
+    }
 }
 
 .al-footer-copyright-content {

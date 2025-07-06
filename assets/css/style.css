@@ -705,6 +705,9 @@ h6 {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
+  @media (max-width: 575.98px) {
+    .al-footer-top-btn {
+      padding: 10px 35px; } }
   .al-footer-top-btn:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -730,6 +733,9 @@ h6 {
 .al-footer-middle {
   padding: 60px 0;
   border-bottom: 1px solid #FFFFFF1A; }
+  @media (max-width: 767.98px) {
+    .al-footer-middle {
+      padding: 30px 0; } }
 
 .al-footer-subtitle {
   font-size: 16px;
@@ -738,6 +744,10 @@ h6 {
   color: var(--white-color);
   margin-top: 32px;
   margin-bottom: 32px; }
+  @media (max-width: 767.98px) {
+    .al-footer-subtitle {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
 
 .al-footer-social-title {
   font-size: 22px;
@@ -859,6 +869,9 @@ h6 {
 /*** Footer Copyright ******/
 .al-footer-copyright {
   padding: 30px 0; }
+  @media (max-width: 575.98px) {
+    .al-footer-copyright {
+      padding: 20px 0; } }
 
 .al-footer-copyright-content {
   font-size: 16px;
