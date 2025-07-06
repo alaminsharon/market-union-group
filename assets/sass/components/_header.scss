@@ -44,6 +44,7 @@
         a {
             color: var(--primary-color);
             transition: 0.3s;
+
             &:hover {
                 color: var(--secondary-color);
             }
@@ -88,6 +89,7 @@
         a {
             color: var(--primary-color);
             transition: 0.3s;
+
             &:hover {
                 color: var(--secondary-color);
             }
@@ -252,6 +254,47 @@
 
             +span {
                 margin-top: 5px;
+            }
+        }
+    }
+}
+
+.dropdown_search {
+    position: relative;
+
+    .search-btn {
+        border: none;
+        background: none;
+    }
+
+    .dropdown-menu {
+        transform: translate(0px, 40px) !important;
+
+        .search-form {
+            padding: 0 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            input {
+                border: 1px solid #e7e7e7;
+                outline: 0;
+                padding: 11px 20px;
+                font-weight: 300;
+            }
+
+            .submit-btn {
+                width: 55px;
+                height: 53px;
+                background-color: var(--secondary-color);
+                color: var(--white-color);
+                flex-shrink: 0;
+                transition: 0.3s;
+                border: none;
+
+                &:hover {
+                    background-color: var(--primary-color);
+                }
             }
         }
     }

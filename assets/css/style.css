@@ -413,6 +413,43 @@ h6 {
       .header-search-bar .offcanvas_btn span + span {
         margin-top: 5px; }
 
+.dropdown_search {
+  position: relative; }
+  .dropdown_search .search-btn {
+    border: none;
+    background: none; }
+  .dropdown_search .dropdown-menu {
+    -webkit-transform: translate(0px, 40px) !important;
+    -ms-transform: translate(0px, 40px) !important;
+    transform: translate(0px, 40px) !important; }
+    .dropdown_search .dropdown-menu .search-form {
+      padding: 0 12px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      gap: 10px; }
+      .dropdown_search .dropdown-menu .search-form input {
+        border: 1px solid #e7e7e7;
+        outline: 0;
+        padding: 11px 20px;
+        font-weight: 300; }
+      .dropdown_search .dropdown-menu .search-form .submit-btn {
+        width: 55px;
+        height: 53px;
+        background-color: var(--secondary-color);
+        color: var(--white-color);
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
+        transition: 0.3s;
+        border: none; }
+        .dropdown_search .dropdown-menu .search-form .submit-btn:hover {
+          background-color: var(--primary-color); }
+
 .al-header-btn {
   background-color: var(--secondary-color);
   color: var(--white-color);
