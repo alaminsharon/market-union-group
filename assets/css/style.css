@@ -60,11 +60,19 @@ img {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+html {
+  overflow-y: scroll;
+  /* Always reserve scrollbar space */ }
+
 body {
   font-size: 16px;
   font-family: var(--primary-font);
   line-height: 28px;
-  font-weight: 400; }
+  font-weight: 400;
+  padding-right: 0;
+  -webkit-transition: padding-right 0.3s ease;
+  -o-transition: padding-right 0.3s ease;
+  transition: padding-right 0.3s ease; }
 
 p {
   margin-bottom: 0;

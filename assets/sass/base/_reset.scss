@@ -4,11 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll;
+    /* Always reserve scrollbar space */
+}
+
 body {
     font-size: 16px;
     font-family: var(--primary-font);
     line-height: 28px;
     font-weight: 400;
+    padding-right: 0;
+    transition: padding-right 0.3s ease;
 }
 
 p {
@@ -45,7 +52,7 @@ select {
 
 
 .scroll-top-btn {
-    width: 50px; 
+    width: 50px;
     height: 50px;
     background-color: var(--primary-color);
     border-radius: 50%;
@@ -56,13 +63,15 @@ select {
     z-index: 1;
     font-size: 22px;
     transition: 0.3s;
+
     i {
         color: var(--white-color);
     }
+
     &::before {
-        content: ''; 
+        content: '';
         position: absolute;
-        width: 100%; 
+        width: 100%;
         height: 100%;
         top: 0;
         left: 0;
@@ -72,15 +81,16 @@ select {
         opacity: 0;
         transition: 0.3s;
     }
+
     &:hover {
         i {
             color: var(--white-color);
         }
     }
+
     &:hover {
         &::before {
             opacity: 1;
         }
     }
 }
-

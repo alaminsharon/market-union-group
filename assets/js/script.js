@@ -99,12 +99,12 @@ function toggleSearch() {
         // Show search
         searchBox.classList.add('active');
         overlay.classList.add('active');
-        body.style.overflow = 'hidden'; // disable scroll
+        body.style.overflow = 'hidden'; // Disable scroll
     } else {
         // Hide search
         searchBox.classList.remove('active');
         overlay.classList.remove('active');
-        body.style.overflow = 'auto'; // enable scroll
+        body.style.overflow = ''; // Restore scroll
     }
 }
 
