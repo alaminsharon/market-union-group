@@ -49,10 +49,10 @@ select {
     height: 50px;
     background-color: var(--primary-color);
     border-radius: 50%;
-    border: none;
+    border: 0;
     position: fixed;
     bottom: 70px;
-    right: 40px;
+    right: 65px;
     z-index: 1;
     font-size: 22px;
     transition: 0.3s;
@@ -66,8 +66,7 @@ select {
         height: 100%;
         top: 0;
         left: 0;
-        background: var(--secondary-color);
-        color: var(--white-color);
+        border: 0;
         z-index: -1;
         border-radius: 50%;
         opacity: 0;
