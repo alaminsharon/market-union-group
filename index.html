@@ -131,16 +131,22 @@
                     </div>
                     <div class="col-lg-4 d-none d-xl-block">
                         <div class="header-search-bar">
-                            <div class="dropdown dropdown_search">
-                                <button class="search-btn" data-bs-toggle="dropdown"><i
-                                        class="fa-solid fa-magnifying-glass"></i></button>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <form class="search-form">
-                                        <input type="text" placeholder="Search..." class="theme-input bg-transparent">
-                                        <button type="submit" class="submit-btn">Go</button>
-                                    </form>
+                            <div class="search-icon" onclick="toggleSearch()">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <!-- Overlay & Search Box -->
+                            <div id="search-overlay" onclick="toggleSearch()"></div>
+
+                            <div id="fullscreen-search">
+                                <div class="search-box" onclick="event.stopPropagation()">
+                                    <input type="text" placeholder="Search...">
+                                    <i class="fas fa-search"></i>
+                                    <span class="close-btn" onclick="toggleSearch()">&times;</span>
                                 </div>
                             </div>
+
+
                             <div class="al-header-btn-item">
                                 <a href="#" class="al-header-btn">Make Appoinment
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -159,16 +165,23 @@
                     </div>
                     <div class="col-lg-10 col-md-8 col-6 d-block d-xl-none">
                         <div class="mobile-toggle d-flex align-items-center gap-3 justify-content-end">
-                            <div class="dropdown dropdown_search">
-                                <button class="search-btn" data-bs-toggle="dropdown"><i
-                                        class="fa-solid fa-magnifying-glass"></i></button>
-                                <div class="dropdown-menu dropdown-menu-end">
-                                    <form class="search-form">
-                                        <input type="text" placeholder="Search..." class="theme-input bg-transparent">
-                                        <button type="submit" class="submit-btn">Go</button>
-                                    </form>
+                            
+                            <div class="search-icon" onclick="toggleSearch()">
+                                <i class="fas fa-search"></i>
+                            </div>
+
+                            <!-- Overlay & Search Box -->
+                            <div id="search-overlay" onclick="toggleSearch()"></div>
+
+                            <div id="fullscreen-search">
+                                <div class="search-box" onclick="event.stopPropagation()">
+                                    <input type="text" placeholder="Search...">
+                                    <i class="fas fa-search"></i>
+                                    <span class="close-btn" onclick="toggleSearch()">&times;</span>
                                 </div>
                             </div>
+
+
                             <div class="al-header-btn-item">
                                 <a href="#" class="al-header-btn">Make Appoinment
                                     <i class="fa-solid fa-arrow-right"></i>

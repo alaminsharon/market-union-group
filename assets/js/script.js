@@ -88,6 +88,27 @@
 
 })(jQuery)
 
+function toggleSearch() {
+    const searchBox = document.getElementById('fullscreen-search');
+    const overlay = document.getElementById('search-overlay');
+    const body = document.body;
+
+    const isActive = searchBox.classList.contains('active');
+
+    if (!isActive) {
+        // Show search
+        searchBox.classList.add('active');
+        overlay.classList.add('active');
+        body.style.overflow = 'hidden'; // disable scroll
+    } else {
+        // Hide search
+        searchBox.classList.remove('active');
+        overlay.classList.remove('active');
+        body.style.overflow = 'auto'; // enable scroll
+    }
+}
+
+
 
 
 
