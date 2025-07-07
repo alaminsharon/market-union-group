@@ -315,6 +315,17 @@
     }
 }
 
+.al-wcs-card {
+    transition: 0.3s;
+    &:hover {
+        .al-wcs-card-thumb {
+            img {
+                animation: bounce 0.6s;
+            }
+        }
+    }
+}
+
 .al-wcs-title {
     text-align: center;
     line-height: 40px;
@@ -345,6 +356,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+
+    img {
+        transition: 0.6s;
+    }
 }
 
 .al-wcs-card-title {

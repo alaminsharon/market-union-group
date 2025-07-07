@@ -85,6 +85,7 @@
     border-radius: 6px;
     display: inline-block;
     transition: 0.3s;
+
     &:hover {
         background-color: var(--primary-color);
         color: var(--white-color);
@@ -129,6 +130,18 @@
     }
 }
 
+.al-agent-card {
+    transition: 0.3s;
+
+    &:hover {
+        .al-agent-card-thumb {
+            img {
+                animation: bounce 0.6s;
+            }
+        }
+    }
+}
+
 .al-agent-card-thumb {
     width: 64px;
     height: 64px;
@@ -137,6 +150,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+
+    img {
+        transition: 0.6s;
+    }
 }
 
 .al-agent-card-title {
@@ -232,6 +251,7 @@
     border-radius: 16px;
     padding: 32px;
 
+
     @include portrait-phone {
         padding: 15px;
     }
@@ -243,6 +263,18 @@
     margin-bottom: 24px;
 }
 
+.al-about-item {
+    transition: 0.3s;
+
+    &:hover {
+        .al-about-item-thumb {
+            img {
+                animation: bounce 0.6s;
+            }
+        }
+    }
+}
+
 .al-about-item-thumb {
     width: 64px;
     height: 64px;
@@ -251,6 +283,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+
+    img {
+        transition: 0.6s;
+    }
 }
 
 .al-about-item-title {
@@ -364,6 +402,7 @@
         line-height: 32px;
         color: var(--white-color);
     }
+
     @include portrait-phone {
         width: 50px;
         height: 50px;
@@ -389,6 +428,7 @@
 .al-district-card-content-title {
     line-height: 36px;
     color: #831843;
+
     @include portrait-phone {
         font-size: 26px;
     }
@@ -549,6 +589,7 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 600;
+
     @include portrait-phone {
         font-size: 14px;
     }
@@ -901,7 +942,7 @@
     padding: 25px;
     min-height: 320px;
     transition: 0.3s;
-    
+
     &:hover {
         border-color: #FBCFE8;
     }

@@ -129,31 +129,32 @@
                             </ul>
                         </div>
                     </div>
+                    <!-- Desktop -->
                     <div class="col-lg-4 d-none d-xl-block">
                         <div class="header-search-bar">
-                            <div class="search-icon" onclick="toggleSearch()">
+                            <div class="search-icon" onclick="toggleSearch('desktop')">
                                 <i class="fas fa-search"></i>
                             </div>
 
                             <!-- Overlay & Search Box -->
-                            <div id="search-overlay" onclick="toggleSearch()"></div>
+                            <div id="search-overlay-desktop" onclick="toggleSearch('desktop')"></div>
 
-                            <div id="fullscreen-search">
+                            <div id="fullscreen-search-desktop">
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch()">
+                                    <span class="close-btn" onclick="toggleSearch('desktop')">
                                         <i class="fa-solid fa-xmark"></i>
                                     </span>
                                 </div>
                             </div>
-
 
                             <div class="al-header-btn-item">
                                 <a href="#" class="al-header-btn">Make Appoinment
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
+
                             <div class="offcanvas_right">
                                 <button class="offcanvas-btn bg-transparent offcanvas_btn" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
@@ -165,30 +166,32 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Mobile -->
                     <div class="col-lg-10 col-md-8 col-6 d-block d-xl-none">
                         <div class="mobile-toggle d-flex align-items-center gap-3 justify-content-end">
 
-                            <div class="search-icon" onclick="toggleSearch()">
+                            <div class="search-icon" onclick="toggleSearch('mobile')">
                                 <i class="fas fa-search"></i>
                             </div>
 
                             <!-- Overlay & Search Box -->
-                            <div id="search-overlay" onclick="toggleSearch()"></div>
+                            <div id="search-overlay-mobile" onclick="toggleSearch('mobile')"></div>
 
-                            <div id="fullscreen-search">
+                            <div id="fullscreen-search-mobile">
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch()">&times;</span>
+                                    <span class="close-btn" onclick="toggleSearch('mobile')">&times;</span>
                                 </div>
                             </div>
 
-
                             <div class="al-header-btn-item">
-                                <a href="#" class="al-header-btn">Make Appoinment
+                                <a href="#" class="al-header-btn al-header-btn-icon">Make Appoinment
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
+
                             <div class="mobile_menu">
                                 <button class="header_toggle_btn bg-transparent border-0" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvas-mobile">

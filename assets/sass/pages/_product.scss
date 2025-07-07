@@ -169,6 +169,18 @@
     }
 }
 
+.al-explore-card {
+    transition: 0.3s;
+
+    &:hover {
+        .al-explore-card-thumb {
+            img {
+                animation: bounce 0.6s;
+            }
+        }
+    }
+}
+
 .al-explore-title {
     margin-bottom: 48px;
     line-height: 36px;
@@ -188,6 +200,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+
+    img {
+        transition: 0.6s;
+    }
 
     @include screen-768 {
         width: 100px;

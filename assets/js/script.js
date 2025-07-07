@@ -88,23 +88,28 @@
 
 })(jQuery)
 
-function toggleSearch() {
-    const searchBox = document.getElementById('fullscreen-search');
-    const overlay = document.getElementById('search-overlay');
-    const body = document.body;
+function toggleSearch(device) {
+    let searchBox, overlay;
 
+    if (device === 'desktop') {
+        searchBox = document.getElementById('fullscreen-search-desktop');
+        overlay = document.getElementById('search-overlay-desktop');
+    } else {
+        searchBox = document.getElementById('fullscreen-search-mobile');
+        overlay = document.getElementById('search-overlay-mobile');
+    }
+
+    const body = document.body;
     const isActive = searchBox.classList.contains('active');
 
     if (!isActive) {
-        // Show search
         searchBox.classList.add('active');
         overlay.classList.add('active');
-        body.style.overflow = 'hidden'; // Disable scroll
+        body.style.overflow = 'hidden';
     } else {
-        // Hide search
         searchBox.classList.remove('active');
         overlay.classList.remove('active');
-        body.style.overflow = ''; // Restore scroll
+        body.style.overflow = '';
     }
 }
 

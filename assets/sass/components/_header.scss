@@ -377,10 +377,20 @@
     }
 }
 
+
+.al-header-btn-icon {
+    display: block;
+
+    @include screen-768 {
+        display: none;
+        margin-top: 20px;
+    }
+}
+
 .al-header-btn-mobile {
     display: none;
 
-    @include screen-992 {
+    @include screen-768 {
         display: inline-block;
         margin-top: 20px;
     }
@@ -510,8 +520,9 @@
     }
 }
 
-/* Overlay */
-#search-overlay {
+/* Overlay (desktop & mobile) */
+#search-overlay-desktop,
+#search-overlay-mobile {
     position: fixed;
     top: 0;
     left: 0;
@@ -522,8 +533,9 @@
     display: none;
 }
 
-/* Fullscreen Search */
-#fullscreen-search {
+/* Fullscreen Search (desktop & mobile) */
+#fullscreen-search-desktop,
+#fullscreen-search-mobile {
     position: fixed;
     top: -100px;
     left: 0;
@@ -543,13 +555,15 @@
 }
 
 /* Search Box */
-#fullscreen-search .search-box {
+#fullscreen-search-desktop .search-box,
+#fullscreen-search-mobile .search-box {
     position: relative;
     width: 80%;
     max-width: 600px;
 }
 
-#fullscreen-search input {
+#fullscreen-search-desktop input,
+#fullscreen-search-mobile input {
     width: 100%;
     padding: 14px 50px 14px 45px;
     font-size: 18px;
@@ -557,7 +571,8 @@
     border-radius: 40px;
 }
 
-#fullscreen-search .fa-search {
+#fullscreen-search-desktop .fa-search,
+#fullscreen-search-mobile .fa-search {
     position: absolute;
     left: 15px;
     top: 50%;
@@ -565,7 +580,8 @@
     color: #aaa;
 }
 
-#fullscreen-search .close-btn {
+#fullscreen-search-desktop .close-btn,
+#fullscreen-search-mobile .close-btn {
     position: absolute;
     right: 25px;
     top: 50%;
@@ -573,17 +589,21 @@
     font-size: 24px;
     color: #666;
     cursor: pointer;
-    i {
-        font-size: 20px;
-    }
+}
+
+#fullscreen-search-desktop .close-btn i,
+#fullscreen-search-mobile .close-btn i {
+    font-size: 20px;
 }
 
 /* Active states */
-#fullscreen-search.active {
+#fullscreen-search-desktop.active,
+#fullscreen-search-mobile.active {
     top: 0;
 }
 
-#search-overlay.active {
+#search-overlay-desktop.active,
+#search-overlay-mobile.active {
     display: block;
 }
 

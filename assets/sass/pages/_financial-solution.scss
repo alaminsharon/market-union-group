@@ -168,9 +168,13 @@
     border-radius: 8px;
     padding: 34px;
     transition: 0.3s;
-
     &:hover {
         border-color: #DBEAFE;
+        .al-advantage-card-thumb {
+            img {
+                animation: bounce 0.6s;
+            }
+        }
     }
 
     @include large-screen {
@@ -195,6 +199,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+
+    img {
+        transition: 0.6s;
+    }
 }
 
 .al-advantage-card-thumb-color {
@@ -276,9 +286,14 @@
     border-radius: 8px;
     padding: 25px;
     transition: 0.3s;
-
+    transition: 0.3s;
     &:hover {
         border-color: #FBCFE8;
+        .al-custom-card-thumb {
+            img {
+                animation: bounce 0.6s;
+            }
+        }
     }
 
     @include screen-1400 {
@@ -303,6 +318,12 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+
+    img {
+        transition: 0.6s;
+    }
 }
 
 .al-custom-card-thumb-color {
