@@ -18,11 +18,11 @@
 <body>
 
     <!--Header Section Start-->
-    <header>
+    <header class="header-sticky al-header-section">
         <div class="al-header-top">
             <div class="container-1780">
                 <div class="row g-4">
-                    <div class="col-sm-7 col-12">
+                    <div class="col-md-7 col-12">
                         <div class="al-header-top-content">
                             <span class="al-header-top-content-title">Need professional medical & health Care?</span>
                             <div class="al-header-top-call">
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-5 col-12">
+                    <div class="col-md-5 d-none d-md-block">
                         <div class="al-header-top-right justify-content-end">
                             <div class="al-header-top-clock">
                                 <i class="fa-regular fa-clock"></i>
@@ -147,7 +147,7 @@
                                 </a>
                             </div>
                             <div class="offcanvas_right">
-                                <button class="header_toggle_btn bg-transparent offcanvas_btn" type="button"
+                                <button class="offcanvas-btn bg-transparent offcanvas_btn" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                                     aria-controls="offcanvasRight">
                                     <span></span>
@@ -169,6 +169,11 @@
                                     </form>
                                 </div>
                             </div>
+                            <div class="al-header-btn-item">
+                                <a href="#" class="al-header-btn">Make Appoinment
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
                             <div class="mobile_menu">
                                 <button class="header_toggle_btn bg-transparent border-0" type="button"
                                     data-bs-toggle="offcanvas" data-bs-target="#offcanvas-mobile">
@@ -189,7 +194,7 @@
     <div class="offcanvas-menu-click">
         <div class="offcanvas-menu-body">
             <div class="offcanvas-content d-flex justify-content-between">
-                <a href="#"><img src="assets/images/offcanvus-logo.svg" alt=""></a>
+                <a href="#" class="offcanvas-menu-logo"><img src="assets/images/offcanvus-logo.svg" alt=""></a>
                 <a href="#" class="offcanvas-menu-close"><i class="fa-solid fa-xmark"></i></a>
             </div>
             <p class="offcanvas-content-subtitle mt20 mb30">Join our newsletter today to get the latest updates and
@@ -261,96 +266,96 @@
     </div>
     <!--Offcanvas Menu End-->
 
-    <!--Mobile Menu Start-->
-    <div class="offcanvas offcanvas-start offcanvas-mobile-content" id="offcanvas-mobile">
-        <div class="offcanvas-body">
-            <div class="mobile-menu">
-                <a href="#" class="logo py-3"><img src="assets/images/offcanvus-logo.svg" alt="logo"
-                        class="img-fluid"></a>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                <ul class="mobile-nav-menu">
-                    <li class="has-submenu">
-                        <a>Home</a>
-                        <i class="fas fa-angle-down"></i>
-                        <ul class="submenu-wrapper">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:void(0)">Services</a>
-                        <i class="fas fa-angle-down"></i>
-                        <ul class="submenu-wrapper">
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Service Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:void(0)">Doctors</a>
-                        <i class="fas fa-angle-down"></i>
-                        <ul class="submenu-wrapper">
-                            <li><a href="#">Doctor</a></li>
-                            <li><a href="#">Doctor Details</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:void(0)">Pages</a>
-                        <i class="fas fa-angle-down"></i>
-                        <ul class="submenu-wrapper">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">History</a></li>
-                            <li><a href="#">Events Calender</a></li>
-                            <li><a href="#">Make An Appoinment</a></li>
-                            <li><a href="#">FAQs</a></li>
-                            <li><a href="#">Pricing Table</a></li>
-                            <li><a href="#">Login</a></li>
-                            <li><a href="#">Sign Up</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="javascript:void(0)">Blog</a>
-                        <i class="fas fa-angle-down"></i>
-                        <ul class="submenu-wrapper">
-                            <li><a href="#">Blog Standart</a></li>
-                            <li><a href="#">Blog Details</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="contact-us.html">Contact</a></li>
+    <!--mobile menu start-->
+    <div class="mobile-menu">
+        <a href="#" class="logo py-3"><img src="assets/images/header-logo.svg" alt="logo" class="img-fluid"></a>
+        <a href="javascript:void(0)" class="close"><i class="fas fa-xmark"></i></a>
+        <ul class="mobile-nav-menu">
+            <li class="has-submenu">
+                <a>Home</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="#">Home 1</a></li>
+                    <li><a href="#">Home 2</a></li>
+                    <li><a href="#">Home 3</a></li>
                 </ul>
-                <h6 class="offcanvas-mobile-title">Contact Info</h6>
-                <ul class="offcanvas-mobile-menu mt20 mb10">
-                    <li>
-                        <p><i class="fa-solid fa-location-dot"></i>
-                            <a href="#">
-                                70 Washington Square South, New York, NY 10012, United States
-                            </a>
-                        </p>
-                    </li>
-                    <li>
-                        <p><i class="fa-solid fa-envelope"></i>
-                            <a href="mailto:example@gmail.com">
-                                example@gmail.com
-                            </a>
-                        </p>
-                    </li>
-                    <li>
-                        <p> <i class="fa-solid fa-phone-flip"></i>
-                            <a href="tel:+00012345688">
-                                +000 (123) 456 88</a>
-                        </p>
-                    </li>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Pages</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Events Calender</a></li>
+                    <li><a href="#">Make An Appoinment</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Pricing Table</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
                 </ul>
-                <ul class="offcanvas-mobile-social">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Services</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Service Details</a></li>
                 </ul>
-            </div>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Doctors</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="#">Doctor</a></li>
+                    <li><a href="#">Doctor Details</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="javascript:void(0)">Blog</a>
+                <i class="fas fa-angle-down"></i>
+                <ul class="submenu-wrapper">
+                    <li><a href="#">Blog Standart</a></li>
+                    <li><a href="#">Blog Details</a></li>
+                </ul>
+            </li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <h6 class="mobile-menu-title">Contact Info</h6>
+        <ul class="mobile-menu-content mt20 mb10">
+            <li>
+                <p><i class="fa-solid fa-location-dot"></i>
+                    <a href="#">
+                        70 Washington Square South, New York, NY 10012, United States
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p><i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:example@gmail.com">
+                        example@gmail.com
+                    </a>
+                </p>
+            </li>
+            <li>
+                <p> <i class="fa-solid fa-phone-flip"></i>
+                    <a href="tel:+00012345688">
+                        +000 (123) 456 88</a>
+                </p>
+            </li>
+        </ul>
+        <ul class="mobile-menu-social">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <div class="al-header-btn-item">
+            <a href="#" class="al-header-btn al-header-btn-mobile">Make Appoinment
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
         </div>
     </div>
-    <!--Mobile Menu End-->
+    <!--mobile menu end-->
 
     <!--Hero Section Start-->
     <section class="al-hero-section">
@@ -373,31 +378,41 @@
                 End-to-End Support</h2>
             <div class="al-support-content">
                 <div class="al-support-card">
-                    <img src="assets/images/support-img-01.svg" alt="">
+                    <div class="al-support-card-thumb">
+                        <img src="assets/images/support-img-01.svg" alt="">
+                    </div>
                     <h6 class="al-support-card-title">Customized Product Development</h6>
                     <p class="al-support-card-subtitle">We provide tailored product sourcing and design services, with a
                         dedicated team that ensures a delivery rate 14% above industry average.</p>
                 </div>
                 <div class="al-support-card">
-                    <img src="assets/images/support-img-02.svg" alt="">
+                    <div class="al-support-card-thumb">
+                        <img src="assets/images/support-img-02.svg" alt="">
+                    </div>
                     <h6 class="al-support-card-title">Flexible Quotation Options</h6>
                     <p class="al-support-card-subtitle">We offer flexible, cost- effective pricing with various
                         options—EXW, FOB, CIF, and DDP— tailored to each project's needs.</p>
                 </div>
                 <div class="al-support-card">
-                    <img src="assets/images/support-img-03.svg" alt="">
+                    <div class="al-support-card-thumb">
+                        <img src="assets/images/support-img-03.svg" alt="">
+                    </div>
                     <h6 class="al-support-card-title">Supplier Due Diligence</h6>
                     <p class="al-support-card-subtitle">Supplier qualification, Golden sample approval, and quality
                         control ensure standard compliance.</p>
                 </div>
                 <div class="al-support-card">
-                    <img src="assets/images/support-img-04.svg" alt="">
+                    <div class="al-support-card-thumb">
+                        <img src="assets/images/support-img-04.svg" alt="">
+                    </div>
                     <h6 class="al-support-card-title">Free Warehousing</h6>
                     <p class="al-support-card-subtitle">Enjoy up to 90 days of complimentary warehousing for your
                         products.</p>
                 </div>
                 <div class="al-support-card">
-                    <img src="assets/images/support-img-05.svg" alt="">
+                    <div class="al-support-card-thumb">
+                        <img src="assets/images/support-img-05.svg" alt="">
+                    </div>
                     <h6 class="al-support-card-title">DDP Delivery & Customs Support</h6>
                     <p class="al-support-card-subtitle">Support DDP delivery to streamline logistics, reduce delays, and
                         simplify customs clearance for hassle- free international shipping.</p>
@@ -980,6 +995,10 @@
         </div>
     </footer>
     <!--Footer Section End-->
+
+    <!--scroll top button start-->
+    <button type="button" class="scroll-top-btn"><i class="fa-solid fa-arrow-up"></i></button>
+    <!--scroll top button end-->
 
 
 

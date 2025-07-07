@@ -59,11 +59,10 @@
     &:hover {
         background-color: var(--primary-color);
         color: var(--white-color);
-        transform: translateY(-2px);
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 
         i {
-            transform: translateX(6px);
+            color: var(--white-color);
         }
     }
 
@@ -459,9 +458,15 @@
     padding: 15px;
     border: none;
     outline: none;
-    border-bottom: 1px solid #E5E7EB;
+    border-bottom: 2px solid #E5E7EB;
     background-color: transparent;
     width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .al-form-single-select {

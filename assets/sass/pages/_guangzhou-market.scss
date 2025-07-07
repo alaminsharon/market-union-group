@@ -140,6 +140,10 @@
         gap: 20px;
     }
 
+    @include screen-768 {
+        justify-content: center;
+    }
+
     @include screen-460 {
         display: block !important;
     }

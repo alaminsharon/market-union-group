@@ -2,6 +2,10 @@
 
 
 /******Header Top*******/
+.al-header-section {
+    background-color: var(--common-bg);
+}
+
 .al-header-top {
     padding: 10px 0;
     border-bottom: 1px solid #EDE8F3;
@@ -15,6 +19,15 @@
     @include screen-1600 {
         gap: 10px;
     }
+
+    @include screen-768 {
+        justify-content: center;
+    }
+
+    @include portrait-phone {
+        display: block;
+        text-align: center;
+    }
 }
 
 .al-header-top-content-title {
@@ -23,8 +36,8 @@
     line-height: 26px;
     color: var(--paragraph-color);
 
-    @include portrait-phone {
-        margin: 0 auto;
+    @include screen-1400 {
+        display: none;
     }
 }
 
@@ -41,6 +54,14 @@
         line-height: 26px;
         color: var(--paragraph-color);
 
+        @include screen-992 {
+            font-size: 14px;
+        }
+
+        @include screen-768 {
+            font-size: 16px;
+        }
+
         a {
             color: var(--primary-color);
             transition: 0.3s;
@@ -49,10 +70,6 @@
                 color: var(--secondary-color);
             }
         }
-    }
-
-    @include screen-1400 {
-        display: none;
     }
 }
 
@@ -86,6 +103,14 @@
         line-height: 26px;
         color: var(--paragraph-color);
 
+        @include screen-992 {
+            font-size: 14px;
+        }
+
+        @include screen-768 {
+            font-size: 16px;
+        }
+
         a {
             color: var(--primary-color);
             transition: 0.3s;
@@ -95,10 +120,6 @@
             }
         }
     }
-
-    @include screen-1400 {
-        display: none;
-    }
 }
 
 .al-header-top-right {
@@ -106,7 +127,6 @@
     align-items: center;
     gap: 13px;
 }
-
 
 .al-header-top-clock {
     display: flex;
@@ -141,6 +161,10 @@
     align-items: center;
     gap: 20px;
 
+    @include screen-992 {
+        gap: 10px;
+    }
+
     li {
         a {
             color: var(--paragraph-color);
@@ -156,7 +180,7 @@
         }
     }
 
-    @include portrait-phone {
+    @include screen-768 {
         display: none;
     }
 }
@@ -209,6 +233,7 @@
                 visibility: hidden;
                 text-align: start !important;
                 transition: 0.3s;
+
 
                 li {
                     a {
@@ -273,6 +298,11 @@
 
     .dropdown-menu {
         transform: translate(0px, 40px) !important;
+        width: 345px;
+
+        @include portrait-phone {
+            width: 260px;
+        }
 
         .search-form {
             padding: 0 12px;
@@ -280,11 +310,16 @@
             align-items: center;
             gap: 10px;
 
+
             input {
                 border: 1px solid #e7e7e7;
                 outline: 0;
                 padding: 11px 20px;
                 font-weight: 300;
+
+                @include portrait-phone {
+                    padding: 2px 5px;
+                }
             }
 
             .submit-btn {
@@ -294,7 +329,13 @@
                 color: var(--white-color);
                 flex-shrink: 0;
                 transition: 0.3s;
+                font-size: 16px;
                 border: none;
+
+                @include portrait-phone {
+                    width: 33px;
+                    height: 30px;
+                }
 
                 &:hover {
                     background-color: var(--primary-color);
@@ -318,11 +359,9 @@
     &:hover {
         background-color: var(--primary-color);
         color: var(--white-color);
-        transform: translateY(-2px);
         border-color: var(--primary-color);
 
         i {
-            transform: translateX(6px);
             color: var(--white-color);
         }
     }
@@ -331,6 +370,18 @@
         color: var(--white-color);
         padding-left: 10px;
         transition: transform 0.3s ease;
+    }
+
+    @include screen-992 {
+        display: none;
+    }
+}
+
+.al-header-btn-mobile {
+    display: none;
+    @include screen-992 {
+        display: inline-block;
+        margin-top: 20px;
     }
 }
 
@@ -459,23 +510,39 @@
 }
 
 /*****Mobile Menu*******/
-.offcanvas-mobile-content {
-    @include portrait-phone {
-        width: 300px !important;
-    }
-}
 
 .mobile-menu {
-    overflow-y: scroll;
-}
+    width: 500px;
 
-.btn-close {
-    position: absolute;
-    right: 25px;
-    background-color: transparent;
-    opacity: 1;
-    padding: 5px;
-    top: 23px;
+    @include portrait-phone {
+        width: 300px;
+    }
+
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -510px;
+    background-color: #fff;
+    z-index: 60;
+    padding: 60px 24px;
+    overflow-y: scroll;
+    transition: 0.3s;
+
+    .close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #141417;
+    }
+
+    .logo {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    &.active {
+        left: 0;
+    }
 }
 
 .mobile-nav-menu {
@@ -488,7 +555,7 @@
 
         a {
             display: inline-block;
-            color: var(--primary-color);
+            color: #141417;
             padding: 20px 0;
         }
 
@@ -516,11 +583,11 @@
     }
 }
 
-.offcanvas-menu-title {
+.mobile-menu-title {
     line-height: 26px;
 }
 
-.offcanvas-mobile-menu {
+.mobile-menu-content {
     li {
         margin-bottom: 5px;
 
@@ -540,7 +607,7 @@
     }
 }
 
-.offcanvas-mobile-social {
+.mobile-menu-social {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -565,6 +632,28 @@
             i {
                 font-size: 14px;
             }
+        }
+    }
+}
+
+/************ sticky header ***********/
+.header-sticky {
+    transition: 0.3s;
+
+    &.sticky-on {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+        animation: 0.3s theme_fadeInDown;
+
+        .al-header-top {
+            display: none !important;
+        }
+
+        .header-bottom {
+            box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.04);
         }
     }
 }

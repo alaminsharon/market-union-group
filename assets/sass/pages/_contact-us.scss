@@ -183,7 +183,7 @@
         border: none !important;
         transition: 0.3s;
 
-        @include portrait-phone {
+        @include screen-460 {
             padding: 12px 30px;
             font-size: 13px;
         }

@@ -2,7 +2,7 @@
 
 /********* Footer Section Start *********/
 .al-footer-section {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 /*** Footer Top ******/
@@ -58,9 +58,9 @@
     }
 
     &:hover {
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         color: var(--white-color);
-        border-color: var(--secondary-color);
+        border-color: var(--primary-color);
 
         i {
             color: var(--white-color);
@@ -143,7 +143,7 @@
             transition: 0.3s;
 
             &:hover {
-                color: var(--secondary-color);
+                color: var(--white-color);
             }
         }
 
@@ -203,7 +203,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         color: var(--white-color);
 
         i {
@@ -238,7 +238,7 @@
         color: var(--white-color);
         transition: 0.3s;
         &:hover {
-            color: var(--secondary-color);
+            color: var(--primary-color);
         }
     }
 
@@ -270,7 +270,7 @@
             transition: 0.3s;
 
             &:hover {
-                color: var(--secondary-color);
+                color: var(--primary-color);
             }
         }
     }
