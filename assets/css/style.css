@@ -109,7 +109,7 @@ select {
   position: fixed;
   bottom: 70px;
   right: 65px;
-  z-index: 1;
+  z-index: 500;
   font-size: 22px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -2082,17 +2082,8 @@ input[type=number]::-webkit-outer-spin-button {
   top: -100px; }
   @media (max-width: 991.98px) {
     .al-source-icon {
-      top: -200px;
-      left: 0%; } }
-  @media (max-width: 767.98px) {
-    .al-source-icon {
-      top: -220px; } }
-  @media (max-width: 575.98px) {
-    .al-source-icon {
-      top: -200px; } }
-  @media (max-width: 460px) {
-    .al-source-icon {
-      top: -240px; } }
+      top: -110px;
+      left: -51%; } }
 
 .al-source-icon .circle {
   width: 64px;
