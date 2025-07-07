@@ -96,8 +96,8 @@
     text-align: center;
     top: -100px;
     @include screen-992 {
-        top: -110px;
-        left: -51%;
+        text-align: start;
+        top: 0;
     }
 }
 

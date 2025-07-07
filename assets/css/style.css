@@ -2082,8 +2082,8 @@ input[type=number]::-webkit-outer-spin-button {
   top: -100px; }
   @media (max-width: 991.98px) {
     .al-source-icon {
-      top: -110px;
-      left: -51%; } }
+      text-align: start;
+      top: 0; } }
 
 .al-source-icon .circle {
   width: 64px;
