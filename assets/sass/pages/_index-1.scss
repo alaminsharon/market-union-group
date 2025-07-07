@@ -158,6 +158,10 @@
 
 .al-support-card-thumb {
     overflow: hidden;
+    transition: 0.3s;
+    img {
+        transition: 0.3s;
+    }
 }
 
 .al-support-card-title {

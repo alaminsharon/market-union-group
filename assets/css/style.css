@@ -1266,7 +1266,14 @@ h6 {
       min-height: 280px; } }
 
 .al-support-card-thumb {
-  overflow: hidden; }
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s; }
+  .al-support-card-thumb img {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
 
 .al-support-card-title {
   font-size: 16px;
