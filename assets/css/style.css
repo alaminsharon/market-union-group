@@ -1935,7 +1935,7 @@ input[type=number]::-webkit-outer-spin-button {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .al-source-item:hover {
-    border-color: var(--secondary-color); }
+    border-color: #FBCFE8; }
   @media (max-width: 991.98px) {
     .al-source-item {
       width: 100%;
@@ -2821,7 +2821,7 @@ input[type=number]::-webkit-outer-spin-button {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .al-complete-card:hover {
-    border-color: var(--secondary-color); }
+    border-color: #FBCFE8; }
   @media (max-width: 1399.98px) {
     .al-complete-card {
       min-height: 340px; } }
@@ -4087,7 +4087,7 @@ input[type=number]::-webkit-outer-spin-button {
   -o-transition: 0.3s;
   transition: 0.3s; }
   .al-custom-card:hover {
-    border-color: var(--secondary-color); }
+    border-color: #FBCFE8; }
   @media (max-width: 1399.98px) {
     .al-custom-card {
       min-height: 230px; } }

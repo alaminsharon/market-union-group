@@ -57,7 +57,7 @@
     border-radius: 8px;
     transition: 0.3s;
     &:hover {
-        border-color: var(--secondary-color);
+        border-color: #FBCFE8;
     }
     @include screen-992 {
         width: 100%;
