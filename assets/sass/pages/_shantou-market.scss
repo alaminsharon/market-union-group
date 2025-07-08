@@ -65,35 +65,57 @@
 
 }
 
+
 .al-hero-shantou-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
     padding: 10px 29px;
     background: var(--white-color);
     color: var(--secondary-color);
     border-radius: 6px;
-    display: inline-block;
-    transition: all 0.3s ease;
+    margin-top: 24px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.4s ease;
 
-    &:hover {
-        background-color: var(--primary-color);
-        color: var(--white-color);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: var(--primary-color);
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.5s ease-out;
+        border-radius: 50%;
+        z-index: 0;
+    }
 
-        i {
-            color: var(--white-color);
-        }
+    &:hover::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    span,
+    i {
+        position: relative;
+        z-index: 1;
     }
 
     i {
-        color: var(--secondary-color);
-        padding-left: 16px;
-        transition: transform 0.3s ease;
+        transition: transform 0.4s ease;
     }
 
-    @include portrait-phone {
-        padding: 10px 15px;
+    &:hover i {
+        transform: translateX(6px);
     }
+
 }
-
 /****** Hero Shantou Section End *********/
 
 .al-solution-shantou-subtitle {

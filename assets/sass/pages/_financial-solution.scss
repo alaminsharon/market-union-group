@@ -60,6 +60,48 @@
     }
 }
 
+.al-hero-financial-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--white-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    padding: 10px 29px;
+    border-radius: 6px;
+    margin-top: 24px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.4s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: var(--primary-color);
+        transform: translate(-50%, -50%) scale(0);
+        transition: 0.5s ease-out;
+        border-radius: 50%;
+        z-index: 0;
+    }
+
+    &:hover::before {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    span {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
 .al-solution-financial-title {
     max-width: 1368px;
     margin-bottom: 24px;
