@@ -60,23 +60,21 @@
     }
 }
 
-
 .al-hero-btn {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     background-color: var(--secondary-color);
     color: var(--white-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
     padding: 10px 29px;
+    border-radius: 6px;
     border: none;
     position: relative;
     overflow: hidden;
     transition: background 0.4s ease;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 500;
-    font-family: var(--primary-font);
-    border-radius: 6px;
 
     &::before {
         content: '';
@@ -109,8 +107,8 @@
     &:hover i {
         transform: translateX(6px);
     }
-}
 
+}
 /****** Hero Section End *********/
 
 /****** Support Section Start *********/
@@ -352,29 +350,6 @@
         font-size: 18px;
         margin-top: 20px;
         margin-bottom: 30px;
-    }
-}
-
-.al-solution-btn {
-    
-    
-    display: inline-block;
-    transition: all 0.3s ease;
-
-    &:hover {
-        background-color: var(--primary-color);
-        color: var(--white-color);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
-        i {
-            color: var(--white-color);
-        }
-    }
-
-    i {
-        color: var(--secondary-color);
-        padding-left: 16px;
-        transition: transform 0.3s ease;
     }
 }
 

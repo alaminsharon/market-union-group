@@ -1283,18 +1283,17 @@ h6 {
   gap: 10px;
   background-color: var(--secondary-color);
   color: var(--white-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
   padding: 10px 29px;
+  border-radius: 6px;
   border: none;
   position: relative;
   overflow: hidden;
   -webkit-transition: background 0.4s ease;
   -o-transition: background 0.4s ease;
-  transition: background 0.4s ease;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 500;
-  font-family: var(--primary-font);
-  border-radius: 6px; }
+  transition: background 0.4s ease; }
   .al-hero-btn::before {
     content: '';
     position: absolute;
@@ -1545,27 +1544,6 @@ h6 {
       font-size: 18px;
       margin-top: 20px;
       margin-bottom: 30px; } }
-
-.al-solution-btn {
-  display: inline-block;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-  .al-solution-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); }
-    .al-solution-btn:hover i {
-      color: var(--white-color); }
-  .al-solution-btn i {
-    color: var(--secondary-color);
-    padding-left: 16px;
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: -webkit-transform 0.3s ease;
-    -o-transition: transform 0.3s ease;
-    transition: transform 0.3s ease;
-    transition: transform 0.3s ease, -webkit-transform 0.3s ease; }
 
 .al-solution-btn {
   display: -webkit-inline-box;
