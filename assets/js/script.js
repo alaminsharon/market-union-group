@@ -3,8 +3,13 @@
 (function ($) {
 
     /*
-        1. Header Button
-        2. Mobile Menu
+        1. Fancy Box
+        2. Offcanvas Menu
+        3. Header Button
+        4. Mobile Menu
+        5. Counter Up Js
+        6. Scroll top button
+        7. Header Sticky
     */
 
     //1. Fancy Box
@@ -13,7 +18,7 @@
     });
 
 
-    //2. Mobile Menu
+    //2. Offcanvas Menu
     $(".offcanvas_right").click(function () {
         $(".offcanvas-menu-click").animate({
             right: "0px",
@@ -26,14 +31,14 @@
         });
     });
 
-    //1. Header Button
+    //3. Header Button
 
     $(".header_toggle_btn").on("click", function () {
         $(".mobile-menu").toggleClass("active");
     });
 
 
-    //2. Mobile Menu
+    //4. Mobile Menu
 
     $(".mobile-menu .close").on("click", function () {
         $(".mobile-menu").removeClass("active");
@@ -53,13 +58,13 @@
         });
     });
 
-    //3. Counter
+    //5. Counter Up Js
     $('.counter').counterUp({
         delay: 10,
         time: 1000,
     });
 
-    //4. Scroll top button
+    //6. Scroll top button
     $(window).on("scroll", function () {
         var scrollBar = $(this).scrollTop();
         if (scrollBar > 150) {
@@ -74,7 +79,7 @@
         });
     });
 
-    //5. Header Sticky
+    //7. Header Sticky
     $(window).on("scroll", function () {
         var scrollBar = $(this).scrollTop();
 
@@ -87,6 +92,8 @@
 
 
 })(jQuery)
+
+
 
 function toggleSearch(device) {
     let searchBox, overlay;
