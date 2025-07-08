@@ -988,6 +988,8 @@ h6 {
     transition: 0.5s ease-out;
     border-radius: 50%;
     z-index: 0; }
+  .al-footer-top-btn:hover {
+    border-color: var(--primary-color); }
   .al-footer-top-btn:hover::before {
     -webkit-transform: translate(-50%, -50%) scale(1);
     -ms-transform: translate(-50%, -50%) scale(1);
