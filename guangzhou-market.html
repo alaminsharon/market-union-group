@@ -136,16 +136,14 @@
                                 <i class="fas fa-search"></i>
                             </div>
 
-                            <!-- Overlay & Search Box -->
                             <div id="search-overlay-desktop" onclick="toggleSearch('desktop')"></div>
-
                             <div id="fullscreen-search-desktop">
+                                <span class="close-btn" onclick="toggleSearch('desktop')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('desktop')">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </span>
                                 </div>
                             </div>
 
@@ -178,12 +176,13 @@
 
                             <!-- Overlay & Search Box -->
                             <div id="search-overlay-mobile" onclick="toggleSearch('mobile')"></div>
-
                             <div id="fullscreen-search-mobile">
+                                <span class="close-btn" onclick="toggleSearch('mobile')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('mobile')">&times;</span>
                                 </div>
                             </div>
 
@@ -412,7 +411,9 @@
                                     <img src="assets/images/coverage-icon-01.svg" alt="">
                                 </div>
                                 <h5 class="al-coverage-card-title">Apparel & Textiles</h5>
-                                <img src="assets/images/coverage-img-01.jpg" alt="" class="al-coverage-card-thumb">
+                                <div class="al-coverage-card-thumb">
+                                    <img src="assets/images/coverage-img-01.jpg" alt="">
+                                </div>
                                 <p class="al-coverage-card-subtitle">Comprehensive coverage of fashion and textile
                                     wholesale markets with quality assurance.</p>
                             </div>
@@ -423,7 +424,9 @@
                                     <img src="assets/images/coverage-icon-02.svg" alt="">
                                 </div>
                                 <h5 class="al-coverage-card-title">Cosmetics & Personal Care</h5>
-                                <img src="assets/images/coverage-img-02.jpg" alt="" class="al-coverage-card-thumb">
+                                <div class="al-coverage-card-thumb">
+                                    <img src="assets/images/coverage-img-02.jpg" alt="">
+                                </div>
                                 <p class="al-coverage-card-subtitle">Serving Baiyun District's beauty industry cluster,
                                     providing cross-border compliance solutions.</p>
                             </div>
@@ -434,7 +437,9 @@
                                     <img src="assets/images/coverage-icon-03.svg" alt="">
                                 </div>
                                 <h5 class="al-coverage-card-title">Electronics & Auto Parts</h5>
-                                <img src="assets/images/coverage-img-03.jpg" alt="" class="al-coverage-card-thumb">
+                                <div class="al-coverage-card-thumb">
+                                    <img src="assets/images/coverage-img-03.jpg" alt="">
+                                </div>
                                 <p class="al-coverage-card-subtitle">Leveraging Nansha Port for efficient export of
                                     precision components and automotive accessories.</p>
                             </div>

@@ -288,63 +288,6 @@
     }
 }
 
-.dropdown_search {
-    position: relative;
-
-    .search-btn {
-        border: none;
-        background: none;
-    }
-
-    .dropdown-menu {
-        transform: translate(0px, 40px) !important;
-        width: 345px;
-
-        @include portrait-phone {
-            width: 260px;
-        }
-
-        .search-form {
-            padding: 0 12px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-
-            input {
-                border: 1px solid #e7e7e7;
-                outline: 0;
-                padding: 11px 20px;
-                font-weight: 300;
-
-                @include portrait-phone {
-                    padding: 2px 5px;
-                }
-            }
-
-            .submit-btn {
-                width: 55px;
-                height: 53px;
-                background-color: var(--secondary-color);
-                color: var(--white-color);
-                flex-shrink: 0;
-                transition: 0.3s;
-                font-size: 16px;
-                border: none;
-
-                @include portrait-phone {
-                    width: 33px;
-                    height: 30px;
-                }
-
-                &:hover {
-                    background-color: var(--primary-color);
-                }
-            }
-        }
-    }
-}
-
 .al-header-btn {
     display: inline-flex;
     align-items: center;
@@ -540,7 +483,6 @@
     }
 }
 
-/* Overlay (desktop & mobile) */
 #search-overlay-desktop,
 #search-overlay-mobile {
     position: fixed;
@@ -563,57 +505,11 @@
     height: 100px;
     background: white;
     z-index: 999;
+    transition: top 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: top 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.search-icon {
-    cursor: pointer;
-}
-
-/* Search Box */
-#fullscreen-search-desktop .search-box,
-#fullscreen-search-mobile .search-box {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-}
-
-#fullscreen-search-desktop input,
-#fullscreen-search-mobile input {
-    width: 100%;
-    padding: 14px 50px 14px 45px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 40px;
-}
-
-#fullscreen-search-desktop .fa-search,
-#fullscreen-search-mobile .fa-search {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #aaa;
-}
-
-#fullscreen-search-desktop .close-btn,
-#fullscreen-search-mobile .close-btn {
-    position: absolute;
-    right: 25px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #666;
-    cursor: pointer;
-}
-
-#fullscreen-search-desktop .close-btn i,
-#fullscreen-search-mobile .close-btn i {
-    font-size: 20px;
 }
 
 /* Active states */
@@ -625,6 +521,81 @@
 #search-overlay-desktop.active,
 #search-overlay-mobile.active {
     display: block;
+}
+
+.search-icon {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    color: #333;
+}
+
+/* Close button outside the box, in top-right corner */
+#fullscreen-search-desktop .close-btn,
+#fullscreen-search-mobile .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 28px;
+    color: #666;
+    cursor: pointer;
+}
+
+/* Search Box Centered */
+#fullscreen-search-desktop .search-box,
+#fullscreen-search-mobile .search-box {
+    position: relative;
+    width: 80%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f6f8;
+    border-radius: 40px;
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+/* Search Icon inside input box */
+#fullscreen-search-desktop .search-box .fa-search,
+#fullscreen-search-mobile .search-box .fa-search {
+    color: #aaa;
+    font-size: 18px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* Input Styling */
+#fullscreen-search-desktop .search-box input,
+#fullscreen-search-mobile .search-box input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px;
+    font-size: 18px;
+    outline: none;
+}
+
+/* Small screen adjustments (optional) */
+@media (max-width: 600px) {
+
+    #fullscreen-search-desktop .close-btn,
+    #fullscreen-search-mobile .close-btn {
+        top: 15px;
+        right: 20px;
+        font-size: 24px;
+    }
+
+    #fullscreen-search-desktop .search-box,
+    #fullscreen-search-mobile .search-box {
+        width: 77%;
+        padding: 6px 16px;
+    }
+
+    #fullscreen-search-desktop .search-box input,
+    #fullscreen-search-mobile .search-box input {
+        font-size: 16px;
+    }
 }
 
 /*****Mobile Menu*******/

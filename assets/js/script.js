@@ -90,6 +90,11 @@
         }
     });
 
+    AOS.init({
+        duration: 1000,   // Animation duration in ms
+        once: true        // Animation runs only once when in viewport
+    });
+
 
 })(jQuery)
 

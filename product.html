@@ -136,16 +136,14 @@
                                 <i class="fas fa-search"></i>
                             </div>
 
-                            <!-- Overlay & Search Box -->
                             <div id="search-overlay-desktop" onclick="toggleSearch('desktop')"></div>
-
                             <div id="fullscreen-search-desktop">
+                                <span class="close-btn" onclick="toggleSearch('desktop')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('desktop')">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </span>
                                 </div>
                             </div>
 
@@ -178,12 +176,13 @@
 
                             <!-- Overlay & Search Box -->
                             <div id="search-overlay-mobile" onclick="toggleSearch('mobile')"></div>
-
                             <div id="fullscreen-search-mobile">
+                                <span class="close-btn" onclick="toggleSearch('mobile')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('mobile')">&times;</span>
                                 </div>
                             </div>
 
@@ -405,7 +404,9 @@
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-sm-6">
                         <div class="al-product-card">
-                            <img class="al-product-card-thumb" src="assets/images/product-img-01.jpg" alt="">
+                            <div class="al-product-card-thumb">
+                                <img src="assets/images/product-img-01.jpg" alt="">
+                            </div>
                             <div class="al-product-card-content">
                                 <h6 class="al-product-card-title">Toys & Hobbies</h6>
                             </div>
@@ -413,7 +414,9 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="al-product-card">
-                            <img class="al-product-card-thumb" src="assets/images/product-img-02.jpg" alt="">
+                            <div class="al-product-card-thumb">
+                                <img src="assets/images/product-img-02.jpg" alt="">
+                            </div>
                             <div class="al-product-card-content">
                                 <h6 class="al-product-card-title">Lights</h6>
                             </div>
@@ -421,7 +424,9 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <div class="al-product-card">
-                            <img class="al-product-card-thumb" src="assets/images/product-img-03.jpg" alt="">
+                            <div class="al-product-card-thumb">
+                                <img src="assets/images/product-img-03.jpg" alt="">
+                            </div>
                             <div class="al-product-card-content">
                                 <h6 class="al-product-card-title">Kitchenware</h6>
                             </div>
@@ -436,7 +441,9 @@
                     <div class="row g-4 justify-content-center">
                         <div class="col-lg-4 col-sm-6">
                             <div class="al-product-card">
-                                <img class="al-product-card-thumb" src="assets/images/product-img-04.jpg" alt="">
+                                <div class="al-product-card-thumb">
+                                    <img src="assets/images/product-img-04.jpg" alt="">
+                                </div>
                                 <div class="al-product-card-content">
                                     <h6 class="al-product-card-title">Garden</h6>
                                 </div>
@@ -444,7 +451,9 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="al-product-card">
-                                <img class="al-product-card-thumb" src="assets/images/product-img-05.jpg" alt="">
+                                <div class="al-product-card-thumb">
+                                    <img src="assets/images/product-img-05.jpg" alt="">
+                                </div>
                                 <div class="al-product-card-content">
                                     <h6 class="al-product-card-title">Fashion Accessories</h6>
                                 </div>
@@ -452,7 +461,9 @@
                         </div>
                         <div class="col-lg-4 col-sm-6">
                             <div class="al-product-card">
-                                <img class="al-product-card-thumb" src="assets/images/product-img-06.jpg" alt="">
+                                <div class="al-product-card-thumb">
+                                    <img src="assets/images/product-img-06.jpg" alt="">
+                                </div>
                                 <div class="al-product-card-content">
                                     <h6 class="al-product-card-title">Festival & Party Supplies</h6>
                                 </div>

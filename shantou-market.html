@@ -136,16 +136,14 @@
                                 <i class="fas fa-search"></i>
                             </div>
 
-                            <!-- Overlay & Search Box -->
                             <div id="search-overlay-desktop" onclick="toggleSearch('desktop')"></div>
-
                             <div id="fullscreen-search-desktop">
+                                <span class="close-btn" onclick="toggleSearch('desktop')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('desktop')">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </span>
                                 </div>
                             </div>
 
@@ -178,12 +176,13 @@
 
                             <!-- Overlay & Search Box -->
                             <div id="search-overlay-mobile" onclick="toggleSearch('mobile')"></div>
-
                             <div id="fullscreen-search-mobile">
+                                <span class="close-btn" onclick="toggleSearch('mobile')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('mobile')">&times;</span>
                                 </div>
                             </div>
 
@@ -451,7 +450,10 @@
             <div class="row g-4 justify-content-center mb60">
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="al-local-card">
-                        <img class="al-local-card-thumb" src="assets/images/local-img-01.jpg" alt="">
+                        <div class="al-local-card-thumb">
+                            <img src="assets/images/local-img-01.jpg" alt="">
+                        </div>
+                        
                         <div class="al-local-card-content">
                             <h6 class="al-local-card-title">Plastic & Silicone Products</h6>
                         </div>
@@ -459,7 +461,9 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="al-local-card">
-                        <img class="al-local-card-thumb" src="assets/images/local-img-02.jpg" alt="">
+                        <div class="al-local-card-thumb">
+                            <img src="assets/images/local-img-02.jpg" alt="">
+                        </div>
                         <div class="al-local-card-content">
                             <h6 class="al-local-card-title">Wood & Metal Products</h6>
                         </div>
@@ -467,7 +471,9 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="al-local-card">
-                        <img class="al-local-card-thumb" src="assets/images/local-img-03.jpg" alt="">
+                        <div class="al-local-card-thumb">
+                            <img src="assets/images/local-img-03.jpg" alt="">
+                        </div>
                         <div class="al-local-card-content">
                             <h6 class="al-local-card-title">Custom Branding</h6>
                         </div>
@@ -475,7 +481,9 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-sm-6">
                     <div class="al-local-card">
-                        <img class="al-local-card-thumb" src="assets/images/local-img-04.jpg" alt="">
+                        <div class="al-local-card-thumb">
+                            <img src="assets/images/local-img-03.jpg" alt="">
+                        </div>
                         <div class="al-local-card-content">
                             <h6 class="al-local-card-title">Fabric & Leather</h6>
                         </div>

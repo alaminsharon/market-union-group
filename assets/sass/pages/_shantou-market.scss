@@ -116,6 +116,7 @@
     }
 
 }
+
 /****** Hero Shantou Section End *********/
 
 .al-solution-shantou-subtitle {
@@ -265,12 +266,24 @@
     }
 }
 
-.al-local-card-thumb {
-    border-radius: 8px 8px 0 0;
-    width: 100%;
+.al-local-card {
+    transition: 0.3s;
+    &:hover {
+        .al-local-card-thumb {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
 
-    @include screen-992 {
+.al-local-card-thumb {
+    overflow: hidden;
+
+    img {
+        border-radius: 8px 8px 0 0;
         width: 100%;
+        transition: 0.3s;
     }
 }
 
@@ -339,6 +352,7 @@
 
 .al-wcs-card {
     transition: 0.3s;
+
     &:hover {
         .al-wcs-card-thumb {
             img {

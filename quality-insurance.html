@@ -136,16 +136,14 @@
                                 <i class="fas fa-search"></i>
                             </div>
 
-                            <!-- Overlay & Search Box -->
                             <div id="search-overlay-desktop" onclick="toggleSearch('desktop')"></div>
-
                             <div id="fullscreen-search-desktop">
+                                <span class="close-btn" onclick="toggleSearch('desktop')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('desktop')">
-                                        <i class="fa-solid fa-xmark"></i>
-                                    </span>
                                 </div>
                             </div>
 
@@ -178,12 +176,13 @@
 
                             <!-- Overlay & Search Box -->
                             <div id="search-overlay-mobile" onclick="toggleSearch('mobile')"></div>
-
                             <div id="fullscreen-search-mobile">
+                                <span class="close-btn" onclick="toggleSearch('mobile')">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
                                 <div class="search-box" onclick="event.stopPropagation()">
                                     <input type="text" placeholder="Search...">
                                     <i class="fas fa-search"></i>
-                                    <span class="close-btn" onclick="toggleSearch('mobile')">&times;</span>
                                 </div>
                             </div>
 
